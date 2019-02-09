@@ -1,0 +1,23 @@
+#topButtons{
+  /* margin: center;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px; */
+
+   text-align: right;
+}
+
+.AboutMe{
+  text-align: center;
+}
+
+.projectBackground{
+
+
+  text-align: center;
+  background-color: yellow;
+}
+
+#contactMe{
+    text-align: center;
+}
