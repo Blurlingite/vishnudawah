@@ -34,3 +34,7 @@
   color: white;
   background-color: #9f7be1;
 }
+
+.carousel-indicators{
+  background-color: black;
+}
