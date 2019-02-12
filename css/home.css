@@ -21,3 +21,16 @@
 #contactMe{
     text-align: center;
 }
+
+.projectDescription{
+
+  font-size: 22px;
+  text-align: left;
+
+}
+
+.githubLink{
+  font-size: 19px;
+  color: white;
+  background-color: #9f7be1;
+}
