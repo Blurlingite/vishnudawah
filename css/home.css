@@ -1,3 +1,11 @@
+body{
+   background-image: url("../img/1.jpg");
+   background-repeat:no-repeat;
+
+   background-size:cover;
+}
+
+
 #topButtons{
   /* margin: center;
   width: 60%;
@@ -9,13 +17,16 @@
 
 .AboutMe{
   text-align: center;
+  color:white;
 }
 
 .projectBackground{
 
 
   text-align: center;
-  background-color: yellow;
+  /* background-color: yellow; */
+  background-color: #BFAFB2;
+
 }
 
 #contactMe{
@@ -45,4 +56,6 @@
 
 #projects{
   font-size: 53px;
+  color:white;
+  
 }
