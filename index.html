@@ -69,9 +69,9 @@
 
   			<div class="row">
   				<div class="col-md-12">
-  					<h3 id="projects" class="text-center">
+  					<h2 id="projects" class="text-center">
   						Projects
-  					</h3>
+  					</h2>
   				</div>
   			</div>
 
@@ -85,19 +85,23 @@
   						<div class="projectBackground col-md-12">
 
                 <div>
+                  <h1>
+                    Vending Machine with REST API
+                  </h1>
+
                   <h3>
-                    Pichu's Vending Machine
+                    Made using AJAX, jQuery, HTML and CSS
                   </h3>
 
 
                   <p class ="projectDescription">
-                    For this project, I was challenged to create a vending machine web application without using any javascript. You can select an item by clicking on one of the blue item buttons, which are dynamically made. Each blue item button tells you the name, price, and inventory of the item. All of this comes from my DaoInMemImpl in my Dao package. Once I get all the information I need to make each item button, I just use JSTL to display all the item buttons with a <c:forEach> tag. Although they look like buttons, they are actually links styled to look like buttons.
+                    For this project, I was challenged to create a vending machine web application. You can select an item by clicking on one of the blue item buttons, which are dynamically made. Each blue item button tells you the name, price, and inventory of the item. All of this comes from a supplied Vending Machine REST API. This is accomplished when I run the VendingMachineRESTWebService jar file (located in my project’s “target” folder) in my terminal. Once I get all the information I need to make each item button from this web service, I plug in the information into a template that is in a function called HTMLItem() in my javascript file.
                     <br />
                     <br />
-                    If you buy an item, and that item’s cost is less than what you put in and it is not out of stock, the item will vend and will display a “thank you” message. If the item cost is more than what you insert, then the application will tell you how much more money you need to insert to buy the item and will let you put in more money. If the item is sold out, not only will it display a “sold out” message but an image of a very sad Pichu will be displayed.
+                    If you buy an item, and that item’s cost is less than what you put in and it is not out of stock, the item will vend and will display a “thank you” message. If the item cost is more than what you insert, then the application will tell you how much more money you need to insert to buy the item and will let you put in more money. If the item is sold out, a “sold out” message will be displayed. 
                     <br />
                     <br />
-                    If you would like to see the code behind this, please check out my Github: <a class = "btn githubLink" href ="https://github.com/Blurlingite/VendingMachineSpringMVC" target="_blank">Github</a>
+                    If you would like to see the code behind this, please check out my Github: <a class = "btn githubLink" href ="https://github.com/Blurlingite/vending-machine-using-REST-API" target="_blank">Github</a>
                   </p>
                 </div>
 
@@ -112,7 +116,6 @@
                     <li data-target="#pichuVMCarousel" data-slide-to="4"></li>
                     <li data-target="#pichuVMCarousel" data-slide-to="5"></li>
                     <li data-target="#pichuVMCarousel" data-slide-to="6"></li>
-                    <li data-target="#pichuVMCarousel" data-slide-to="7"></li>
 
 
                   </ol>
@@ -144,12 +147,9 @@
                     </div>
 
                     <div class="item">
-                      <img src="img/pichusVM/soldOut2.png" alt="happyVM3" style="width:100%;">
+                      <img src="img/pichusVM/soldOut4.png" alt="happyVM3" style="width:100%;">
                     </div>
 
-                    <div class="item">
-                      <img src="img/pichusVM/soldOut3.png" alt="happyVM3" style="width:100%;">
-                    </div>
 
 
                   </div>
@@ -183,9 +183,13 @@
 
                 <div>
 
-                  <h3>
+                  <h1>
   								    Superhero Sightings
-  							  </h3>
+  							  </h1>
+
+                  <h3>
+                    Made using Java, MySQL, JSPs, Spring JDBC, Spring Security and Apache Tomcat
+                  </h3>
 
                   <p class ="projectDescription">
                     In this next web application, I focused on functionality and general layout of the web pages over styling. This application has 6 entities: Superpowers, Persons, Organizations, Locations, Sightings, and Users. You will be able to create, read, update, and delete from these 6 entities. This application is equipped with spring security, so you can only perform all those actions if you are an admin. If you are logged in as a user, all you can do is read from each entity and report a sighting.
@@ -339,9 +343,13 @@
 
                 <div>
 
-                  <h3>
+                  <h1>
     								   Flooring Orders
-  							  </h3>
+  							  </h1>
+
+                  <h3>
+                    Made using Java with the Netbeans IDE
+                  </h3>
 
                   <p class ="projectDescription">
                     This is a console application that can create, read, update, and delete orders using input from the user. The user can select a state, product and input an area amount that they want covered. Exceptions are caught and displayed if the user enters incorrectly formatted input. The application creates files to store orders on the date they were created and uses the date in the file name. I was actually really proud of myself for being able to accomplish this. I thought it was cool that I could make my application make files for me, instead of manually creating the files.
