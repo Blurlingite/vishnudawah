@@ -1,22 +1,29 @@
-.content {
-  height: 100%;
-  width: 100%;
+.projectCards {
+  background-color: red;
+  height: 30%;
+  width: 30%;
+  margin-left: 3%;
+  margin-bottom: 3%;
 }
+
+.content,
 .container {
   height: 100%;
   width: 100%;
 }
 
-#pageTopRow {
-  height: 100%;
-}
-
-#pageTopClass {
+#pageTopRow,
+#pageTopClass,
+.hundredHeight {
   height: 100%;
 }
 
 .pageSize {
   height: 20%;
+}
+
+.cards {
+  height: 50%;
 }
 
 .blueSection {
@@ -47,50 +54,4 @@ body {
   background-size: cover; */
   background-color: red;
   height: 10000px;
-}
-
-#topButtons {
-  text-align: right;
-}
-
-.AboutMe {
-  text-align: center;
-  color: white;
-}
-
-.projectBackground {
-  text-align: center;
-  background-color: #bfafb2;
-}
-
-#contactMe {
-  text-align: center;
-}
-
-.projectDescription {
-  font-size: 22px;
-  text-align: left;
-}
-
-.buttonLink {
-  font-size: 19px;
-  color: white;
-  background-color: #9f7be1;
-}
-
-.carousel-indicators {
-  background-color: black;
-}
-
-#vishnuDawah {
-  font-size: 60px;
-}
-
-#projects {
-  font-size: 53px;
-  color: white;
-}
-
-.whiteText {
-  color: white;
 }
