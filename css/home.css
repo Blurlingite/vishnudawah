@@ -1,5 +1,13 @@
-.aaa {
-  background-color: aqua;
+.blueSection {
+  height: 850px;
+  /* background-color: #1994f2; */
+  background-color: #1997f7;
+}
+
+.purpleSection {
+  height: 800px;
+  /* background-color: #5a0aec; */
+  background-color: #7e6ff3;
 }
 
 body {
