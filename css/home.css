@@ -1,74 +1,55 @@
-body{
-
-   background-image: url("../img/siteBackground.jpg");
-   background-repeat:no-repeat;
-   background-size:cover;
-
+.aaa {
+  background-color: aqua;
 }
 
-
-#topButtons{
-
-   text-align: right;
-
+body {
+  background-image: url("../img/siteBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.AboutMe{
+#topButtons {
+  text-align: right;
+}
 
+.AboutMe {
   text-align: center;
-  color:white;
-
+  color: white;
 }
 
-.projectBackground{
-
+.projectBackground {
   text-align: center;
-  background-color: #BFAFB2;
-
+  background-color: #bfafb2;
 }
 
-#contactMe{
-
-    text-align: center;
-
+#contactMe {
+  text-align: center;
 }
 
-.projectDescription{
-
+.projectDescription {
   font-size: 22px;
   text-align: left;
-
 }
 
-.buttonLink{
-
+.buttonLink {
   font-size: 19px;
   color: white;
   background-color: #9f7be1;
-
 }
 
-.carousel-indicators{
-
+.carousel-indicators {
   background-color: black;
-
 }
 
-#vishnuDawah{
-
+#vishnuDawah {
   font-size: 60px;
-
 }
 
-#projects{
-
+#projects {
   font-size: 53px;
-  color:white;
-
+  color: white;
 }
 
-.whiteText{
-
+.whiteText {
   color: white;
-
 }
