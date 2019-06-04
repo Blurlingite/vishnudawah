@@ -1,19 +1,52 @@
+.content {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+#pageTopRow {
+  height: 100%;
+}
+
+#pageTopClass {
+  height: 100%;
+}
+
+.pageSize {
+  height: 20%;
+}
+
 .blueSection {
-  height: 850px;
+  height: 100%;
   /* background-color: #1994f2; */
   background-color: #1997f7;
+  width: 100%;
 }
 
 .purpleSection {
-  height: 800px;
+  /* height: 850px; */
+  /* height: 10%; */
+  height: 100%;
+
   /* background-color: #5a0aec; */
   background-color: #7e6ff3;
 }
 
+.titleText {
+  font-size: 22px;
+  text-align: center;
+}
+
+html,
 body {
-  background-image: url("../img/siteBackground.jpg");
+  /* background-image: url("../img/siteBackground.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-color: red;
+  height: 10000px;
 }
 
 #topButtons {
