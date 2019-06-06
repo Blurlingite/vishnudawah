@@ -44,8 +44,6 @@
 }
 
 .purpleSection {
-  /* height: 850px; */
-  /* height: 10%; */
   height: 100%;
 
   /* background-color: #5a0aec; */
@@ -57,11 +55,47 @@
   text-align: center;
 }
 
-html,
-body {
-  /* background-image: url("../img/siteBackground.jpg");
+.newHtml,
+.newBody {
+  background-image: url("../img/siteBackground.jpg");
   background-repeat: no-repeat;
-  background-size: cover; */
-  background-color: red;
+  background-size: cover;
+  /* background-color: red; */
   height: 4000px;
+}
+
+/* DO NOT DELETE UNTIL test2.html is ready */
+
+.AboutMe,
+.text-center {
+  text-align: center;
+  color: white;
+}
+
+.projectDescription {
+  color: white;
+  font-size: 22px;
+}
+
+.oldSiteBody {
+  background-image: url("../img/siteBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.buttonLink {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#contactMe {
+  text-align: center;
+}
+
+.whiteText {
+  color: white;
+}
+
+.redText {
+  color: red;
 }
