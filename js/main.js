@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $(".submit").click(function(event) {
     // stop the form from submitting so we can validate it first
-    event.preventDefault();
+    // event.preventDefault();
 
     // get the values from the input fields by their class name
     var email = $(".email").val();
