@@ -121,6 +121,19 @@
   text-align: left;
 }
 
+.projectVid {
+  width: 100%;
+  height: 720px;
+  margin: 0;
+  padding: 0;
+  /* background-color: green; */
+}
+
+.presentVid {
+  width: 100%;
+  height: 100%;
+}
+
 .navbar {
   background-color: black;
 }
@@ -223,6 +236,12 @@
 .buttonLink {
   background-color: dodgerblue;
   color: white;
+  width: 200px;
+  height: 100px;
+}
+
+.centerText {
+  text-align: center;
 }
 
 #contactMe {
@@ -235,4 +254,35 @@
 
 .redText {
   color: red;
+}
+
+.gameLinks {
+  text-align: center;
+  font-size: 20px;
+}
+
+.x {
+  padding-left: 160px;
+}
+
+.buttonText {
+  padding-top: 30px;
+  font-size: 22px;
+}
+
+.emailPadding {
+  padding-top: 30px;
+}
+
+#vishnuDawah {
+  font-size: 62px;
+}
+
+#projects,
+#contactMeText {
+  font-size: 52px;
+}
+
+#aboutMeParagraph {
+  text-align: left;
 }
