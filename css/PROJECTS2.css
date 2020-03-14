@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+* {
+  font-family: Quicksand;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the background image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  padding: 0.8rem;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+/* Media Queries */
+@media (max-width: 1800px) {
+  .stats-row {
+    /* background-color: darkslateblue; */
+    margin-left: 24rem;
+    margin-right: 12rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .stats-row {
+    /* background-color: darkslateblue; */
+    margin-left: 22rem;
+    margin-right: 12rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .stats-row {
+    /* background-color: darkseagreen; */
+    margin-left: 16rem;
+    margin-right: 12rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .stats-row {
+    /* background-color: darkslategrey; */
+    margin-left: 10rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 200%;
+  }
+
+  .stats-row {
+    /* background-color: darkorchid; */
+    margin-left: 6rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 160%;
+  }
+
+  .stats {
+    width: 50%;
+  }
+
+  .stats-row {
+    /* background-color: darkslateblue; */
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+/* Bootstrap Padding Fix */
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/* 
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phone, 576px and up)
+@media (min-width: 576px) {...}
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) {...}
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) {...}
+
+Extra Large (xl) devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {...}
+
+
+
+*/
+
+.body-text {
+  color: white;
+  font-size: 22px;
+}
+
+.heading-text {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.navbar-padding,
+.navbar-container {
+  background-color: black;
+  padding: 0;
+}
+
+.hamburger-icon {
+  background-color: thistle;
+}
+
+.giant-container {
+  background: linear-gradient(rgba(20, 20, 20, 1.7), rgba(20, 20, 20, 1.7));
+  margin-top: 4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+
+  padding-bottom: 4rem;
+}
+
+.stats-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.playButton {
+  width: 10rem;
+  height: 10rem;
+}
+
+.playButtonLink {
+  text-align: center;
+}
+
+.presentVid {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive iframe START 
+See Here: https://benmarshall.me/responsive-iframes/
+*/
+.iframe-container {
+  overflow: hidden;
+  /* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  /* margin-left: 15px; */
+}
+/* Responsive iframe END */
+
+.accordion-div {
+  padding-top: 0;
+}
+
+.accordiion-button {
+  width: 100%;
+  background-color: #43464b;
+  font-size: 1.2rem;
+}
+
+.codeSnippets {
+  width: 100%;
+  height: 100%;
+}
+
+.project-title {
+  font-size: 3rem;
+}
+
+.child-accordion-button {
+  width: 100%;
+  background-color: #b36200;
+  font-size: 1.2rem;
+}
+
+.display-text-padding {
+  padding-top: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.project-desc-padding {
+  padding-top: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+
+/* Stop iframe from overflowing the container */
+.section-3 {
+  margin: 0;
+}
+
+footer {
+  background-color: black;
+}
