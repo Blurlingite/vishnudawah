@@ -1202,10 +1202,20 @@
           <div class="container-fluid body-text">
             <div class="row text-center">
               <div class="col-12">
-                <h5>Copyright © 2019 by Vishnu Dawah</h5>
+                <h5 id="copyright"></h5>
               </div>
             </div>
           </div>
         </footer>
+
+        <script>
+          let dt = new Date();
+          let text = `Copyright © ${dt.getFullYear()} by Vishnu Dawah`;
+        
+          var theElement = document.getElementById("copyright");
+        
+          var content = document.createTextNode(text);
+          theElement.appendChild(content);
+        </script>
   </body>
 </html>

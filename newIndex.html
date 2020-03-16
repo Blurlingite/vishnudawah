@@ -17,10 +17,14 @@
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     <link href="css/responsiveStyle.css" rel="stylesheet" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+
+
   </head>
   <body>
+
     <!-- Navigation -->
     <nav
       class="navbar navbar-expand-md navbar-light bg-light sticky-top navbar-padding"
@@ -470,10 +474,21 @@
       <div class="container-fluid body-text">
         <div class="row text-center">
           <div class="col-12">
-            <h5>Copyright © 2019 by Vishnu Dawah</h5>
+            <h5 id="copyright"></h5>
           </div>
         </div>
       </div>
     </footer>
+
+<script>
+  let dt = new Date();
+  let text = `Copyright © ${dt.getFullYear()} by Vishnu Dawah`;
+
+  var theElement = document.getElementById("copyright");
+
+  var content = document.createTextNode(text);
+  theElement.appendChild(content);
+</script>
+
   </body>
 </html>
