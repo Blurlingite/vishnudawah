@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vending Machine with REST API</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <link href="../../css/PROJECTS2.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body
+    background="https://ih0.redbubble.net/image.239636241.3080/flat,750x1000,075,f.u3.jpg"
+  >
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light sticky-top navbar-padding"
+    >
+      <div class="container-fluid navbar-container">
+        <a href="../../index.html" class="navbar-brand">
+          <!-- <span class="body-text">Vishnu Dawah</span> -->
+          <img id="siteIcon" src="../../img/blurlingiteLogo.png" />
+        </a>
+        <button
+          class="navbar-toggler hamburger-icon"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="../../index.html" class="nav-link center-text"
+                ><span class="body-text">Home</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="../../index.html#about" class="nav-link center-text">
+                <span class="body-text">About</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../../index.html#projects" class="nav-link center-text">
+                <span class="body-text">Projects</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../../index.html#contact" class="nav-link center-text">
+                <span class="body-text">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Giant container section -->
+    <div class="giant-container">
+      <!-- Section 1 -->
+      <div class="row section-1">
+        <div
+          class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text accordion-div project-title"
+        >
+          Vending Machine with REST API
+        </div>
+
+        <div class="row stats-row">
+          <div
+            class="class col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 body-text left-text stats-padding stats"
+          >
+            Status
+          </div>
+          <div
+            class="class col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 body-text left-text stats-padding stats"
+          >
+            Completed
+          </div>
+
+          <div
+            class="class col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 body-text left-text stats-padding stats"
+          >
+            Project Type
+          </div>
+          <div
+            class="class col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 body-text left-text stats-padding stats"
+          >
+            Personal
+          </div>
+
+          <div
+            class="class col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 body-text left-text stats-padding stats"
+          >
+            Technologies
+          </div>
+          <div
+            class="class col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 body-text left-text stats-padding stats"
+          >
+            AJAX, jQuery, HTML and CSS
+          </div>
+
+          <div
+            class="class col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 body-text left-text stats-padding stats"
+          >
+            Role(s)
+          </div>
+          <div
+            class="class col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 body-text left-text stats-padding stats"
+          >
+            Software programmer
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="row section-2">
+        <div
+          class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text project-desc-padding"
+        >
+          For this project, I was challenged to create a vending machine web
+          application. You can select an item by clicking on one of the blue
+          item buttons, which are dynamically made. Each blue item button tells
+          you the name, price, and inventory of the item. All of this comes from
+          a supplied Vending Machine REST API. This is accomplished when I run
+          the VendingMachineRESTWebService jar file (located in my project’s
+          “target” folder) in my terminal. Once I get all the information I need
+          to make each item button from this web service, I plug in the
+          information into a template that is in a function called HTMLItem() in
+          my javascript file.
+          <br />
+          <br />
+          If you buy an item, and that item’s cost is less than what you put in
+          and it is not out of stock, the item will vend and will display a
+          “thank you” message. If the item cost is more than what you insert,
+          then the application will tell you how much more money you need to
+          insert to buy the item and will let you put in more money. If the item
+          is sold out, a “sold out” message will be displayed.
+        </div>
+      </div>
+
+      <!-- Section 2b -->
+      <div class="row section-2b">
+        <div
+          class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text"
+        >
+          <a
+            href="https://github.com/Blurlingite/vending-machine-using-REST-API"
+            target="_blank"
+          >
+            <img src="../../img/github.png" class="playButton" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="row section-3">
+        <div
+          class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text"
+        >
+          <!-- Image Slider -->
+          <div id="slides" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#slides" data-slide-to="0" class="active"></li>
+              <li data-target="#slides" data-slide-to="1"></li>
+              <li data-target="#slides" data-slide-to="2"></li>
+              <li data-target="#slides" data-slide-to="3"></li>
+              <li data-target="#slides" data-slide-to="4"></li>
+              <li data-target="#slides" data-slide-to="5"></li>
+              <li data-target="#slides" data-slide-to="6"></li>
+            </ul>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../../img/pichusVM/happyVM1.png" />
+              </div>
+
+              <div class="carousel-item">
+                <img src="../../img/pichusVM/happyVM2.png" />
+              </div>
+
+              <div class="carousel-item">
+                <img src="../../img/pichusVM/happyVM3.png" />
+              </div>
+
+              <div class="carousel-item">
+                <img src="../../img/pichusVM/insufficientFunds1.png" />
+              </div>
+
+              <div class="carousel-item">
+                <img src="../../img/pichusVM/insufficientFunds2.png" />
+              </div>
+
+              <div class="carousel-item">
+                <img src="../../img/pichusVM/soldOut1.png" />
+              </div>
+
+              <div class="carousel-item">
+                <img src="../../img/pichusVM/soldOut4.png" />
+              </div>
+            </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#slides" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#slides" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid body-text">
+        <div class="row text-center">
+          <div class="col-12">
+            <h5>Copyright © 2019 by Vishnu Dawah</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
