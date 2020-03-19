@@ -489,14 +489,13 @@ Extra Large (xl) devices (large desktops, 1200px and up)
 .projectsContainer,
 .card-body,
 .card {
-  background-color: #333;
+  background-color: #4b4b4c;
 }
 
 .aboutContainer,
 .contactContainer,
-.projects-trailer-gif-cont,
-.galaxy-shooter-thumbnail {
-  background-color: #242f52;
+.projects-trailer-gif-cont {
+  background-color: #153184;
 }
 
 .projectsTitle {
