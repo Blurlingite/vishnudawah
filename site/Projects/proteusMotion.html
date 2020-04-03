@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Proteus Motion</title>
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -17,10 +18,8 @@
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     <link href="../../css/PROJECTS2.css" rel="stylesheet" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
+
   <body>
     <!-- Navigation -->
     <nav
@@ -86,7 +85,7 @@
           <div
             class="class col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 body-text left-text stats-padding stats"
           >
-            CURRENT
+            Completed
           </div>
 
           <div
@@ -97,7 +96,7 @@
           <div
             class="class col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 body-text left-text stats-padding stats"
           >
-            Professional
+            Work
           </div>
 
           <div
@@ -108,7 +107,7 @@
           <div
             class="class col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 body-text left-text stats-padding stats"
           >
-            Typescript, React, Babylon.js, Three.js
+            Typescript, ReactJS, ThreeJS, BabylonJS
           </div>
 
           <div
@@ -119,7 +118,7 @@
           <div
             class="class col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 body-text left-text stats-padding stats"
           >
-            Intern
+            Gameplay programming
           </div>
         </div>
       </div>
@@ -129,162 +128,784 @@
         <div
           class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text project-desc-padding"
         >
-          I am currently interning at Proteus Motion working on the 3D visuals
-          for their latest device, the Proteus System. I am refactoring their
-          Three.js code into Babylon.js so that they can offload some processes
-          into a separate thread using Babylon's Offscreen Canvas. This is
-          desirable because it will help their biofeedback system run faster. I
-          am using the data they have given me to construct 3D spaces and
-          objects that will help their users analyze their exercises.
-          <br />
-          <br />
-          There will be some screenshots here once I get permission from Proteus
-          Motion.
+         During my internship at Proteus Motion, I worked on the 3D visuals for their latest device,
+         the Proteus System. I have refactored their ThreeJS code into BabylonJS so that they can offload
+         some processes into a separate thread using Babylon's Offscreen Canvas. This is desirable 
+         because it will help their biofeedback system run faster. By using the data they gave
+         me, I was able to construct 3D spaces and objects that will help their users analyze their exercises.
         </div>
       </div>
 
-      <!-- Section 2b -->
       <div class="row section-2b">
-        <div
-          class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text"
-        >
+        <div class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text">
           <a href="https://www.proteusmotion.com/" target="_blank">
-            <img src="../../img/proteus-motion.jpg" class="playButton" />
+            <img src="../../img/proteus-motion.jpg" class="playButton">
           </a>
         </div>
       </div>
 
-      <!-- Section 3 -->
-      <!-- <div class="row section-3">
-        <div
-          class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text"
+ 
+      <!-- Parent Accordion 1 START -->
+      <div
+        class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text accordion-div"
+      >
+        <button
+          type="button"
+          class="btn btn-info accordiion-button"
+          data-toggle="collapse"
+          data-target="#accordionContents1"
         >
-          <div id="slides" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
-              <li data-target="#slides" data-slide-to="0" class="active"></li>
-              <li data-target="#slides" data-slide-to="1"></li>
-              <li data-target="#slides" data-slide-to="2"></li>
-              <li data-target="#slides" data-slide-to="3"></li>
-              <li data-target="#slides" data-slide-to="4"></li>
-              <li data-target="#slides" data-slide-to="5"></li>
-              <li data-target="#slides" data-slide-to="6"></li>
-              <li data-target="#slides" data-slide-to="7"></li>
-              <li data-target="#slides" data-slide-to="8"></li>
-              <li data-target="#slides" data-slide-to="9"></li>
-              <li data-target="#slides" data-slide-to="10"></li>
-              <li data-target="#slides" data-slide-to="11"></li>
-              <li data-target="#slides" data-slide-to="12"></li>
-              <li data-target="#slides" data-slide-to="13"></li>
-              <li data-target="#slides" data-slide-to="14"></li>
-              <li data-target="#slides" data-slide-to="15"></li>
-              <li data-target="#slides" data-slide-to="16"></li>
-              <li data-target="#slides" data-slide-to="17"></li>
-            </ul>
+          First Time Using Typescript
+        </button>
 
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../img/superheroSightings/ssHomePage.png" />
+        <div id="accordionContents1" class="collapse">
+          <div class="accordionDesc accordionText bodyText left-text display-text-padding">
+            The Player(s) are able to move within a certain range of the screen
+            and can fire a laser with a 1 second cool down before they can fire
+            again. I created a spawn manager that controls how the enemies are
+            spawned. It uses a coroutine so that the game will wait a certain
+            amount of seconds (3 seconds) and then spawn another enemy. The
+            enemy can fire 2 lasers at once as shown by my enemyLaser
+            GameObject. The enemy's lasers also have a cool down that is
+            determined by my _canFire variable. The _laserPrefab used in
+            enemyLaser is actually a container that holds 2 laser objects. This
+            gives the enemy an edge because a direct hit means the Player will
+            lose 2 lives. Yikes! They mean business! (The business of misery)
+          </div>
+
+          <div id="point1" class="projectPoint">
+            <div>
+              <br />
+
+              <div
+              class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text"
+              >
+                <!-- Image Slider -->
+                <div id="slides" class="carousel slide" data-ride="carousel">
+                  <ul class="carousel-indicators">
+                    <li data-target="#slides" data-slide-to="0" class="active"></li>
+                    <li data-target="#slides" data-slide-to="1"></li>
+                    <li data-target="#slides" data-slide-to="2"></li>
+                    <li data-target="#slides" data-slide-to="3"></li>
+                    <li data-target="#slides" data-slide-to="4"></li>
+                    <li data-target="#slides" data-slide-to="5"></li>
+                    <li data-target="#slides" data-slide-to="6"></li>
+                  </ul>
+    
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../../img/pichusVM/happyVM1.png" />
+                    </div>
+    
+                    <div class="carousel-item">
+                      <img src="../../img/pichusVM/happyVM2.png" />
+                    </div>
+    
+                    <div class="carousel-item">
+                      <img src="../../img/pichusVM/happyVM3.png" />
+                    </div>
+    
+                    <div class="carousel-item">
+                      <img src="../../img/pichusVM/insufficientFunds1.png" />
+                    </div>
+    
+                    <div class="carousel-item">
+                      <img src="../../img/pichusVM/insufficientFunds2.png" />
+                    </div>
+    
+                    <div class="carousel-item">
+                      <img src="../../img/pichusVM/soldOut1.png" />
+                    </div>
+    
+                    <div class="carousel-item">
+                      <img src="../../img/pichusVM/soldOut4.png" />
+                    </div>
+                  </div>
+                </div>
+    
+                <a class="carousel-control-prev" href="#slides" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#slides" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+            </div>
+
+            <br />
+
+            <div class="Inneraccordion">
+              <button
+                type="button"
+                class="btn btn-info bodyText child-accordion-button snippetButton"
+                data-toggle="collapse"
+                data-target="#contentA1GS1"
+              >
+                <div class="buttonText">
+                  <i class="fa fa-code"></i>
+
+                  Player Movement Code Snippet
+                </div>
+              </button>
+            </div>
+
+            <div
+              id="contentA1GS1"
+              class="collapse accordionText bodyText left-text display-text-padding"
+            >
+              <p>
+                In my player script, the CalculateMovement() method tells the
+                player how to move and sets the boundary that causes the player
+                to switch to the opposite side.
+                <br />
+                <br />
+                On line 233, I assign a variable Unity's horizontal axis from
+                it's Input Manager. This Input Manager assigns keys of my
+                choosing to it so I can use them to move along the horizontal
+                axis (left/right). I chose to use the left and right arrow keys.
+                The same thing happens on line 235 but with the vertical axis
+                and the up & down arrrow keys instead (to move up/down). I use
+                the horizontal and vertical variables
+                <br />
+                <br />
+                On line 237, the direction variable controls our direction of
+                travel. It uses the horizontal variable as the x value and the
+                vertical variable as the y value in this Vector3(x,y,z) to allow
+                us to move the player both horizontally and vertically using the
+                arrow keys. We don't need the z axis in this 2D game so we pass
+                in 0.
+                <br />
+                <br />
+                "_speed" is a global variable that controls how fast the player
+                moves and when we combine it with the Vector3 that controls the
+                player's horizontal and vertical axes, it will apply that speed
+                when you press the arrow keys. We also multiply this by
+                Time.deltaTime so the player moves in real time and not game run
+                time (which would be so fast you probably wouldn't see it move).
+                <br />
+                <br />
+                On line 241, I use Mathf.Clamp() to restrict the y position of
+                the player to -3.8f and 0. Which stops the player from moving
+                below the bottom of the screen & above the middle of the screen.
+                <br />
+                <br />
+                On lines 243-247, I make the player warp to the opposite side of
+                the screen (horizontally). I use an if-else if statement to
+                check if the player is at the far left or right(which I
+                determined to be -10.46 & +10.46 respectively). If they are then
+                I just reassign the position.
+              </p>
+
+              <br />
+
+              <img
+                class="codeSnippets"
+                src="../../img/ProjectSnippets/galaxyShooter/playerCalculateMovement.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Parent Accordion 1 END -->
+
+        <!-- Parent Accordion 2 START -->
+        <div
+          class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text accordion-div"
+        >
+          <button
+            type="button"
+            class="btn btn-info accordiion-button"
+            data-toggle="collapse"
+            data-target="#accordionContents2"
+          >
+            3D Movement Path Visualizer
+          </button>
+
+          <div id="accordionContents2" class="collapse">
+            <div class="accordionDesc accordionText bodyText left-text display-text-padding">
+              Below is some information on collisions between the player, power
+              ups and enemies. They allow us to do things like applying a power
+              up effect when collecting a power up and destroying objects with
+              lasers.
+            </div>
+
+            <div id="point4" class="projectPoint">
+              <div>
+                <br />
+                <div
+                class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text"
+                >
+                  <!-- Image Slider -->
+                  <div id="movePathViz" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                      <li data-target="#movePathViz" data-slide-to="0" class="active"></li>
+                      <li data-target="#movePathViz" data-slide-to="1"></li>
+                      <li data-target="#movePathViz" data-slide-to="2"></li>
+                      <li data-target="#movePathViz" data-slide-to="3"></li>
+                      <li data-target="#movePathViz" data-slide-to="4"></li>
+                      <li data-target="#movePathViz" data-slide-to="5"></li>
+                      <li data-target="#movePathViz" data-slide-to="6"></li>
+                    </ul>
+      
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../../img/pichusVM/happyVM1.png" />
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../../img/pichusVM/happyVM2.png" />
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../../img/pichusVM/happyVM3.png" />
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../../img/pichusVM/insufficientFunds1.png" />
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../../img/pichusVM/insufficientFunds2.png" />
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../../img/pichusVM/soldOut1.png" />
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../../img/pichusVM/soldOut4.png" />
+                      </div>
+                    </div>
+                  </div>
+      
+                  <a class="carousel-control-prev" href="#movePathViz" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#movePathViz" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
               </div>
 
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/adminLogIn.png" />
+              <br />
+
+              <div class="Inneraccordion">
+                <button
+                  type="button"
+                  class="btn btn-info bodyText child-accordion-button snippetButton"
+                  data-toggle="collapse"
+                  data-target="#contentA2GS1"
+                >
+                  <div class="buttonText">
+                    <i class="fa fa-code"></i>
+
+                    Power Up Collision Snippet
+                  </div>
+                </button>
               </div>
 
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/createStarfire1.png" />
-              </div>
+              <div
+                id="contentA2GS1"
+                class="collapse accordionText bodyText left-text display-text-padding"
+              >
+                <p>
+                  Since this is a 2D game, I am using Unity's OnTriggerEnter2D()
+                  method to detect & react to collisions. I used that instead of
+                  OnCollisionEnter2D() because the power up will serve as a
+                  trigger. Meaning, I don't want to apply a force on the player
+                  when the power up collides with it (if it did that, the power
+                  up would push the player back as if the power up damages the
+                  player when they collect it).
+                  <br />
+                  <br />
+                  On line 47, a switch statement is used to change one of the
+                  player's bools depending on the incoming powerupID (which is
+                  determined by which power up the player collected).
+                </p>
 
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/createStarfire2.png" />
-              </div>
+                <br />
 
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/readStorm1.png" />
-              </div>
-
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/readStorm2.png" />
-              </div>
-
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/editStarfire1.png" />
-              </div>
-
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/editStarfire2.png" />
-              </div>
-
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/editStarfire3.png" />
-              </div>
-
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/editStarfire4.png" />
-              </div>
-
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/editStarfire5.png" />
-              </div>
-
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/deleteMagneto1.png" />
-              </div>
-
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/deleteMagneto2.png" />
-              </div>
-
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/userLogin.png" />
-              </div>
-
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/userPerson.png" />
-              </div>
-
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/starfireSight1.png" />
-              </div>
-
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/starfireSight2.png" />
-              </div>
-
-              <div class="carousel-item">
-                <img src="../../img/superheroSightings/starfireSight3.png" />
+                <img
+                  class="codeSnippets"
+                  src="../../img/ProjectSnippets/galaxyShooter/powerupCollision.png"
+                />
               </div>
             </div>
           </div>
-
-          <a class="carousel-control-prev" href="#slides" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#slides" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
         </div>
-      </div> -->
-    </div>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container-fluid body-text">
-        <div class="row text-center">
-          <div class="col-12">
-            <h5 id="copyright"></h5>
+        <!-- Parent Accordion 2 END -->
+
+        <!-- Parent Accordion 3 START -->
+        <div
+          class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text accordion-div"
+        >
+          <button
+            type="button"
+            class="btn btn-info accordiion-button"
+            data-toggle="collapse"
+            data-target="#accordionContents3"
+          >
+            3D Power Visualizer
+          </button>
+
+          <div id="accordionContents3" class="collapse">
+            <div class="accordionDesc accordionText bodyText left-text display-text-padding">
+              Since all the power ups share similar behaviors, I will just talk
+              about my favorite, the Reflector. It was definitely the most
+              difficult to understand out of the 4.
+            </div>
+
+            <br />
+            <div id="point7" class="projectPoint">
+              <div>
+                <div
+                class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text"
+                >
+
+                  <!-- Image Slider -->
+                  <div id="powerViz" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                      <li data-target="#powerViz" data-slide-to="0" class="active"></li>
+                      <li data-target="#powerViz" data-slide-to="1"></li>
+                      <li data-target="#powerViz" data-slide-to="2"></li>
+                      <li data-target="#powerViz" data-slide-to="3"></li>
+                    </ul>
+
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../../img/proteusMotion/babylonChartWrapperPics/bcw_1.png" />
+                      </div>
+
+                      <div class="carousel-item">
+                        <img src="../../img/proteusMotion/babylonChartWrapperPics/bcw_2.png" />
+                      </div>
+
+                      <div class="carousel-item">
+                        <img src="../../img/proteusMotion/babylonChartWrapperPics/bcw_3.png" />
+                      </div>
+
+                      <div class="carousel-item">
+                        <img src="../../img/proteusMotion/babylonChartWrapperPics/bcw_4.png" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <a class="carousel-control-prev" href="#powerViz" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#powerViz" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+              </div>
+
+              <br />
+
+              <div class="Inneraccordion">
+                <button
+                  type="button"
+                  class="btn btn-info bodyText child-accordion-button snippetButton"
+                  data-toggle="collapse"
+                  data-target="#contentA3GS7"
+                >
+                  <div class="buttonText">
+                    <i class="fa fa-code"></i>
+
+                    Reflector Power Up Snippets
+                  </div>
+                </button>
+              </div>
+
+              <div
+                id="contentA3GS7"
+                class="collapse accordionText bodyText left-text display-text-padding"
+              >
+                <p>
+                  My ReflectorActive() method, activates the reflector by
+                  changing the _isReflectorActive bool to true on line 559.
+                  <br />
+                  <br />
+                  On lines 561-562 I am using a coroutine (which you can see in
+                  the next snippet) to wait 10 seconds and then deactivate the
+                  reflector.
+                  <br />
+                </p>
+
+                <br />
+
+                <img
+                  class="codeSnippets"
+                  src="../../img/ProjectSnippets/galaxyShooter/ReflectorActive.png"
+                />
+
+                <br />
+                <br />
+                Below is the DeactivateReflector() coroutine. It turns off the
+                Reflector's animation and sets it's bool to false. That way, all
+                the code in my Player script that is dependent on this bool
+                stops executing.
+                <br />
+                <br />
+
+                <img
+                  class="codeSnippets"
+                  src="../../img/ProjectSnippets/galaxyShooter/DeactivateReflector.png"
+                />
+              </div>
+              <br>
+            </div>
           </div>
         </div>
+
+        <!-- Parent Accordion 3 END -->
+
+        <!-- Parent Accordion 4 START -->
+        <div
+          class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text accordion-div"
+        >
+          <button
+            type="button"
+            class="btn btn-info accordiion-button"
+            data-toggle="collapse"
+            data-target="#accordionContents4"
+          >
+           Colors, Light & Shadows
+          </button>
+
+          <div id="accordionContents4" class="collapse">
+            <div class="accordionDesc accordionText bodyText left-text display-text-padding">
+              My UIManager script helps to inform the player of the state of the
+              game. The display of lives remaining, the score, and the game over
+              text are all involved with this.
+            </div>
+
+            <div id="point8" class="projectPoint">
+              <div>
+                <br />
+
+                <img
+                  class="codeSnippets"
+                  src="../../gifs/galaxyShooterGifs/GameOverScreen.gif"
+                  alt="”animated”"
+                />
+
+                <br />
+                <br />
+                <p class="bodyText">
+                  Here is the UI Manager component from Unity's Inspector:
+                </p>
+                <br />
+
+                <img
+                  class="codeSnippets"
+                  src="../../img/ProjectSnippets/galaxyShooter/UIManagerComponent.png"
+                />
+              </div>
+
+              <br />
+
+              <br />
+
+              <div class="Inneraccordion">
+                <button
+                  type="button"
+                  class="btn btn-info bodyText child-accordion-button snippetButton"
+                  data-toggle="collapse"
+                  data-target="#contentA4GS8b"
+                >
+                  <div class="buttonText">
+                    <i class="fa fa-code"></i>
+
+                    Lives Display Snippets
+                  </div>
+                </button>
+              </div>
+
+              <div
+                id="contentA4GS8b"
+                class="collapse accordionText bodyText left-text display-text-padding"
+              >
+                <p>
+                  On line 181 of this method it takes in the amount of lives
+                  remaining and displays a sprite on the top left of the screen
+                  to represent that. If the amount of lives is greater or equal
+                  to 4, it displays a one ship sprite followed by that number.
+                  Otherwise, it will display the 3 ship sprite if 3 lives
+                  remaining, the 2 ship sprite if 2 remain, etc.
+                  <br />
+                  <br />
+                  It finds the sprite in a Sprite array I have declared as a
+                  global variable. You can see in the UI Manager component image
+                  above that this array is called "Lives Sprites" and has 5
+                  sprites assigned to it named "no_lives","One", "Two", "Three",
+                  and "Mult".
+                  <br />
+                  <br />
+                  I use multiLives variable to access the "Mult" sprite in the
+                  array and the amountOfLives variable to access the rest by
+                  passing that variable's value in as the index. After I get the
+                  number of lives to display, I access the Text object in my
+                  scene and pass that value into a string on line 190. On line
+                  196 I set the Text object to an empty string because if I get
+                  to that line the player has under 4 lives left, so I just want
+                  to display a sprite.
+                </p>
+
+                <br />
+
+                <img
+                  class="codeSnippets"
+                  src="../../img/ProjectSnippets/galaxyShooter/displayLives.png"
+                />
+
+                <br />
+                <br />
+              </div>
+
+              <br />
+
+              <div class="Inneraccordion">
+                <button
+                  type="button"
+                  class="btn btn-info bodyText child-accordion-button snippetButton"
+                  data-toggle="collapse"
+                  data-target="#contentA4GS8c"
+                >
+                  <div class="buttonText">
+                    <i class="fa fa-code"></i>
+
+                    Score Display Snippets
+                  </div>
+                </button>
+              </div>
+
+              <div
+                id="contentA4GS8c"
+                class="collapse accordionText bodyText left-text display-text-padding"
+              >
+                <p>
+                  In my Start() method of the UIManager script, I default the
+                  score to 0 at the beginning of the game on line 53.
+                  <br />
+                  <br />
+                  On line 56, I retrieve the best score by using PlayerPrefs and
+                  display that using line 58.
+                  <br />
+                  <br />
+                  PlayerPrefs stores simple data, such as the highest score, so
+                  we can display it if the player starts a new game.
+                </p>
+
+                <br />
+
+                <img
+                  class="codeSnippets"
+                  src="../../img/ProjectSnippets/galaxyShooter/scoreStart.png"
+                />
+
+                <br />
+                <br />
+                Below are 2 methods that deal with updating the current game's
+                score and the best score (stored using PlayerPrefs).
+                UpdateScore() is pretty simple, it just changes the display to
+                match what you pass in. BestScore() checks if the score you pass
+                in is greater than the best score that is stored using
+                PlayerPrefs and updates it if it greater.
+                <br />
+                <br />
+
+                <img
+                  class="codeSnippets"
+                  src="../../img/ProjectSnippets/galaxyShooter/scoreMethods.png"
+                />
+
+                <br />
+                <br />
+              </div>
+
+              <br />
+              <div class="Inneraccordion">
+                <button
+                  type="button"
+                  class="btn btn-info bodyText child-accordion-button snippetButton"
+                  data-toggle="collapse"
+                  data-target="#contentA4GS8d"
+                >
+                  <div class="buttonText">
+                    <i class="fa fa-code"></i>
+
+                    Game Over Sequence Snippets
+                  </div>
+                </button>
+              </div>
+
+              <div
+                id="contentA4GS8d"
+                class="collapse accordionText bodyText left-text display-text-padding"
+              >
+                <p>
+                  The snippet below is from my UIManager script. Since I've
+                  added a co-op mode to this game, I need to check if we are
+                  playing a co-op game on line 110.
+                  <br />
+                  <br />
+                  On lines 112, I switch the Game Manager's _isGameOver bool to
+                  true using it's GameOver() method. This is so we can enter the
+                  if statement in my GameManager script that lets us restart the
+                  game by pressing the "R" key. However, the actual display of
+                  the Game Over & Restart text happens in my UIManager script on
+                  lines 113-114.
+                  <br />
+                  <br />
+                  On line 124 I start the coroutine that flickers the Game Over
+                  text on & off (a snippet of that is also below). I used an
+                  "endless" while loop to achieve this but the coroutine will
+                  end once we restart the game, since coroutines terminate when
+                  the scene is reloaded.
+                </p>
+
+                <br />
+
+                <img
+                  class="codeSnippets"
+                  src="../../img/ProjectSnippets/galaxyShooter/GameOverSequence.png"
+                />
+
+                <br />
+                <br />
+                Below is the GameOverFlicker() coroutine:
+                <br />
+                <br />
+
+                <img
+                  class="codeSnippets"
+                  src="../../img/ProjectSnippets/galaxyShooter/GameOverFlicker.png"
+                />
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+
+        <!-- Parent Accordion 4 END -->
+
+        <!-- Parent Accordion 5 START -->
+        <div
+          class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text accordion-div"
+        >
+          <button
+            type="button"
+            class="btn btn-info accordiion-button"
+            data-toggle="collapse"
+            data-target="#accordionContents5"
+          >
+            React Class to Hooks Conversion
+          </button>
+
+          <div id="accordionContents5" class="collapse">
+            <div class="accordionDesc accordionText bodyText left-text display-text-padding">
+              I had a lot of fun adding animations & sound effects to the game.
+              They really make the game come to life. I've noticed that after
+              playing around with those, I now pay more attention to them when
+              I'm playing my favorite games. I'll be talking about the
+              explosions in my game, since both their animations & sound effects
+              are very noticeable.
+            </div>
+
+            <div id="point9" class="projectPoint">
+              <div>
+                <br />
+                <div class="iframe-container">
+                  <iframe
+                    class="presentVid"
+                    src="../../videos/ExplosionVid.mp4"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+
+              <br />
+
+              <div class="Inneraccordion">
+                <button
+                  type="button"
+                  class="btn btn-info bodyText child-accordion-button snippetButton"
+                  data-toggle="collapse"
+                  data-target="#contentA5GS1"
+                >
+                  <div class="buttonText">
+                    <i class="fa fa-code"></i>
+
+                    Explosion Anim & Sound Snippets
+                  </div>
+                </button>
+              </div>
+
+              <div
+                id="contentA5GS1"
+                class="collapse accordionText bodyText left-text display-text-padding "
+              >
+                <p>
+                  Below is the code from the Explosion.cs script. This script is
+                  attached to an object whose purpose is to play the explosion
+                  animation, sound effect and destroy itself. In the video
+                  above, after detecting collisions & destroying the asteroid,
+                  this object will be instantiated,and explodes immediately.
+                  <br />
+                  <br />
+                  The explosion object has an Audio Source component and an
+                  audio clip assigned to that component. All we need to do to
+                  see & hear the explosion is get that Audio Source on line 14
+                  and then play the audio clip on that Audio Source on line 22.
+                  I definitely like how Unity is composed of component that you
+                  can easily find and access. It makes things more organized.
+                  <br />
+                  <br />
+                  On line 23, I destroy the invisible & intangible explosion
+                  object after 3 seconds. 3 seconds gives enough time for the
+                  animation & sound effect to play.
+                </p>
+
+                <br />
+
+                <img
+                  class="codeSnippets"
+                  src="../../img/ProjectSnippets/galaxyShooter/ExplosionScript.png"
+                />
+
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parent Accordion 5 END -->
       </div>
-    </footer>
+    </div>
 
-    <script>
-      let dt = new Date();
-      let text = `Copyright © ${dt.getFullYear()} by Vishnu Dawah`;
+        <!-- Footer -->
+        <footer>
+          <div class="container-fluid body-text">
+            <div class="row text-center">
+              <div class="col-12">
+                <h5 id="copyright"></h5>
+              </div>
+            </div>
+          </div>
+        </footer>
 
-      var theElement = document.getElementById("copyright");
-
-      var content = document.createTextNode(text);
-      theElement.appendChild(content);
-    </script>
+        <script>
+          let dt = new Date();
+          let text = `Copyright © ${dt.getFullYear()} by Vishnu Dawah`;
+        
+          var theElement = document.getElementById("copyright");
+        
+          var content = document.createTextNode(text);
+          theElement.appendChild(content);
+        </script>
   </body>
 </html>
