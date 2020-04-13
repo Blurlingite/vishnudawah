@@ -323,65 +323,97 @@
 
           <div id="accordionContents2" class="collapse">
             <div class="accordionDesc accordionText bodyText left-text display-text-padding">
-              Below is some information on collisions between the player, power
-              ups and enemies. They allow us to do things like applying a power
-              up effect when collecting a power up and destroying objects with
-              lasers.
+              This part of the system allows the user to practice exercises, displays how much
+              power they used, as well as show their movement for that exercise. I worked on adding
+              the scene where you see the pink, orange and blue spheres and a purple tube connecting them.
+              The tube represents the movement path. The orange and pink spheres are the start and goal points 
+              respectively.
             </div>
 
             <div id="point4" class="projectPoint">
               <div>
+                <br/>
+                Here is what it looked like before with ThreeJS:
                 <br />
                 <div
                 class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text"
                 >
                   <!-- Image Slider -->
-                  <div id="movePathViz" class="carousel slide" data-ride="carousel">
+                  <div id="movePathThreeViz" class="carousel slide" data-ride="carousel">
                     <ul class="carousel-indicators">
-                      <li data-target="#movePathViz" data-slide-to="0" class="active"></li>
-                      <li data-target="#movePathViz" data-slide-to="1"></li>
-                      <li data-target="#movePathViz" data-slide-to="2"></li>
-                      <li data-target="#movePathViz" data-slide-to="3"></li>
-                      <li data-target="#movePathViz" data-slide-to="4"></li>
-                      <li data-target="#movePathViz" data-slide-to="5"></li>
-                      <li data-target="#movePathViz" data-slide-to="6"></li>
+                      <li data-target="#movePathThreeViz" data-slide-to="0" class="active"></li>
+                      <li data-target="#movePathThreeViz" data-slide-to="1"></li>
+                      <li data-target="#movePathThreeViz" data-slide-to="2"></li>
+                      <li data-target="#movePathThreeViz" data-slide-to="3"></li>
                     </ul>
       
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="../../img/pichusVM/happyVM1.png" />
+                        <img src="../../img/proteusMotion/threeWrapperPics/tw_1.png" />
                       </div>
       
                       <div class="carousel-item">
-                        <img src="../../img/pichusVM/happyVM2.png" />
+                        <img src="../../img/proteusMotion/threeWrapperPics/tw_2.png" />
                       </div>
       
                       <div class="carousel-item">
-                        <img src="../../img/pichusVM/happyVM3.png" />
+                        <img src="../../img/proteusMotion/threeWrapperPics/tw_3.png" />
                       </div>
       
                       <div class="carousel-item">
-                        <img src="../../img/pichusVM/insufficientFunds1.png" />
-                      </div>
-      
-                      <div class="carousel-item">
-                        <img src="../../img/pichusVM/insufficientFunds2.png" />
-                      </div>
-      
-                      <div class="carousel-item">
-                        <img src="../../img/pichusVM/soldOut1.png" />
-                      </div>
-      
-                      <div class="carousel-item">
-                        <img src="../../img/pichusVM/soldOut4.png" />
+                        <img src="../../img/proteusMotion/threeWrapperPics/tw_4.png" />
                       </div>
                     </div>
                   </div>
       
-                  <a class="carousel-control-prev" href="#movePathViz" data-slide="prev">
+                  <a class="carousel-control-prev" href="#movePathThreeVizmovePathThreeViz" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                   </a>
-                  <a class="carousel-control-next" href="#movePathViz" data-slide="next">
+                  <a class="carousel-control-next" href="#movePathThreeViz" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <br/>
+                Here is what it looked like after with BabylonJS:
+                <br />
+                <div
+                class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 body-text center-text"
+                >
+                  <!-- Image Slider -->
+                  <div id="movePathBabylonViz" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                      <li data-target="#movePathBabylonViz" data-slide-to="0" class="active"></li>
+                      <li data-target="#movePathBabylonViz" data-slide-to="1"></li>
+                      <li data-target="#movePathBabylonViz" data-slide-to="2"></li>
+                      <li data-target="#movePathBabylonViz" data-slide-to="3"></li>
+                    </ul>
+      
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../../img/proteusMotion/babylonWrapperPics/bw_1.png" />
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../../img/proteusMotion/babylonWrapperPics/bw_2.png" />
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../../img/proteusMotion/babylonWrapperPics/bw_3.png" />
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../../img/proteusMotion/babylonWrapperPics/bw_4.png" />
+                      </div>
+                    </div>
+                  </div>
+      
+                  <a class="carousel-control-prev" href="#movePathBabylonViz" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#movePathBabylonViz" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                   </a>
                 </div>
