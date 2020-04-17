@@ -196,7 +196,7 @@
                   </ul>
 
                   <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="slide-indicators carousel-item active">
                       <img src="../../img/pichusVM/happyVM1.png" />
                     </div>
 
@@ -228,11 +228,11 @@
 
                 <a class="carousel-control-prev" href="#slides"
                   data-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
+                  <span class="carousel-arrow carousel-control-prev-icon"></span>
                 </a>
                 <a class="carousel-control-next" href="#slides"
                   data-slide="next">
-                  <span class="carousel-control-next-icon"></span>
+                  <span class="carousel-arrow carousel-control-next-icon"></span>
                 </a>
               </div>
             </div>
@@ -533,11 +533,11 @@
 
                     <a class="carousel-control-prev" href="#powerViz"
                       data-slide="prev">
-                      <span class="carousel-control-prev-icon"></span>
+                      <span class="carousel-arrow carousel-control-prev-icon"></span>
                     </a>
                     <a class="carousel-control-next" href="#powerViz"
                       data-slide="next">
-                      <span class="carousel-control-next-icon"></span>
+                      <span class="carousel-arrow carousel-control-next-icon"></span>
                     </a>
                   </div>
                 </div>
@@ -616,11 +616,9 @@
             <div id="accordionContents4" class="collapse">
               <div class="accordionDesc accordionText bodyText left-text
                 display-text-padding">
-                My UIManager script helps to inform the player of the state of
-                the
-                game. The display of lives remaining, the score, and the game
-                over
-                text are all involved with this.
+                Here is an aerial view of the scene, allowing you to see the shadows of
+                the colorful heat tubes on the floor. The shadows help the user perceive the 
+                depth and positioning of the 3D objects. 
               </div>
 
               <div id="point8" class="projectPoint">
@@ -629,25 +627,12 @@
 
                   <img
                     class="codeSnippets"
-                    src="../../gifs/galaxyShooterGifs/GameOverScreen.gif"
+                    src="../../img/proteusMotion/babylonChartWrapperPics/shadowPics/allShadows.png"
                     alt="”animated”"
-                    />
-
-                  <br />
-                  <br />
-                  <p class="bodyText">
-                    Here is the UI Manager component from Unity's Inspector:
-                  </p>
-                  <br />
-
-                  <img
-                    class="codeSnippets"
-                    src="../../img/ProjectSnippets/galaxyShooter/UIManagerComponent.png"
                     />
                 </div>
 
                 <br />
-
                 <br />
 
                 <div class="Inneraccordion">
@@ -660,7 +645,7 @@
                     <div class="buttonText">
                       <i class="fa fa-code"></i>
 
-                      Lives Display Snippets
+                      Colors Snippet
                     </div>
                   </button>
                 </div>
@@ -670,43 +655,25 @@
                   class="collapse accordionText bodyText left-text
                   display-text-padding">
                   <p>
-                    On line 181 of this method it takes in the amount of lives
-                    remaining and displays a sprite on the top left of the
-                    screen
-                    to represent that. If the amount of lives is greater or
-                    equal
-                    to 4, it displays a one ship sprite followed by that number.
-                    Otherwise, it will display the 3 ship sprite if 3 lives
-                    remaining, the 2 ship sprite if 2 remain, etc.
-                    <br />
-                    <br />
-                    It finds the sprite in a Sprite array I have declared as a
-                    global variable. You can see in the UI Manager component
-                    image
-                    above that this array is called "Lives Sprites" and has 5
-                    sprites assigned to it named "no_lives","One", "Two",
-                    "Three",
-                    and "Mult".
-                    <br />
-                    <br />
-                    I use multiLives variable to access the "Mult" sprite in the
-                    array and the amountOfLives variable to access the rest by
-                    passing that variable's value in as the index. After I get
-                    the
-                    number of lives to display, I access the Text object in my
-                    scene and pass that value into a string on line 190. On line
-                    196 I set the Text object to an empty string because if I
-                    get
-                    to that line the player has under 4 lives left, so I just
-                    want
-                    to display a sprite.
+                    The colors of each sphere that makes up the tube is determined using 
+                    a number argument. Three and Babylon use different measurements for
+                    color (Three uses HSL while Babylon uses RGB). It was difficult, but
+                    I mangaed to find a formula that could convert HSL to RGB. The reason why
+                    it was difficult was because Three was using values from 0-255 while Babylon
+                    could only accept values from 0-1. Most formulas I found required you to be
+                    using values from 0-255.
+                    <br/>
+                    <br/>
+                    After I did find a formula, I added that color onto a material and then added
+                    that material to an array. Once the sphere is created it will pull the appropriate
+                    material from that array.
                   </p>
 
                   <br />
 
                   <img
                     class="codeSnippets"
-                    src="../../img/ProjectSnippets/galaxyShooter/displayLives.png"
+                    src="../../img/ProjectSnippets/proteusMotion/colors.png"
                     />
 
                   <br />
@@ -725,7 +692,7 @@
                     <div class="buttonText">
                       <i class="fa fa-code"></i>
 
-                      Score Display Snippets
+                      Light Snippet
                     </div>
                   </button>
                 </div>
@@ -735,44 +702,17 @@
                   class="collapse accordionText bodyText left-text
                   display-text-padding">
                   <p>
-                    In my Start() method of the UIManager script, I default the
-                    score to 0 at the beginning of the game on line 53.
-                    <br />
-                    <br />
-                    On line 56, I retrieve the best score by using PlayerPrefs
-                    and
-                    display that using line 58.
-                    <br />
-                    <br />
-                    PlayerPrefs stores simple data, such as the highest score,
-                    so
-                    we can display it if the player starts a new game.
+                   Lighting the scenes was a challenge since I was not using a GUI and lights are invisible objects.
+                   To help with that, I wrote a function that give lights a physical form. It's really simple, I just
+                   make a sphere and place it where the light is. I also give it a color. 
                   </p>
 
                   <br />
 
                   <img
                     class="codeSnippets"
-                    src="../../img/ProjectSnippets/galaxyShooter/scoreStart.png"
+                    src="../../img/ProjectSnippets/proteusMotion/viewLightSource.png"
                     />
-
-                  <br />
-                  <br />
-                  Below are 2 methods that deal with updating the current game's
-                  score and the best score (stored using PlayerPrefs).
-                  UpdateScore() is pretty simple, it just changes the display to
-                  match what you pass in. BestScore() checks if the score you
-                  pass
-                  in is greater than the best score that is stored using
-                  PlayerPrefs and updates it if it greater.
-                  <br />
-                  <br />
-
-                  <img
-                    class="codeSnippets"
-                    src="../../img/ProjectSnippets/galaxyShooter/scoreMethods.png"
-                    />
-
                   <br />
                   <br />
                 </div>
@@ -788,7 +728,7 @@
                     <div class="buttonText">
                       <i class="fa fa-code"></i>
 
-                      Game Over Sequence Snippets
+                      Shadows Snippet
                     </div>
                   </button>
                 </div>
@@ -798,49 +738,25 @@
                   class="collapse accordionText bodyText left-text
                   display-text-padding">
                   <p>
-                    The snippet below is from my UIManager script. Since I've
-                    added a co-op mode to this game, I need to check if we are
-                    playing a co-op game on line 110.
-                    <br />
-                    <br />
-                    On lines 112, I switch the Game Manager's _isGameOver bool
-                    to
-                    true using it's GameOver() method. This is so we can enter
-                    the
-                    if statement in my GameManager script that lets us restart
-                    the
-                    game by pressing the "R" key. However, the actual display of
-                    the Game Over & Restart text happens in my UIManager script
-                    on
-                    lines 113-114.
-                    <br />
-                    <br />
-                    On line 124 I start the coroutine that flickers the Game
-                    Over
-                    text on & off (a snippet of that is also below). I used an
-                    "endless" while loop to achieve this but the coroutine will
-                    end once we restart the game, since coroutines terminate
-                    when
-                    the scene is reloaded.
+                    I used a spotlight to cast shadows since I can't use the ambient lighting 
+                    (that type of lighting doesn't extend the IShadowLight interface).  
+                    I instantiated a ShadowGenerator object and passed in the spotlight. Then I 
+                    allowed the plane (the floor) to be able to receive shadows. I also made
+                    the shadows blurry to make them more realistic.
                   </p>
-
                   <br />
-
                   <img
                     class="codeSnippets"
-                    src="../../img/ProjectSnippets/galaxyShooter/GameOverSequence.png"
+                    src="../../img/ProjectSnippets/proteusMotion/shadow_1.png"
                     />
+                    <br />
 
-                  <br />
-                  <br />
-                  Below is the GameOverFlicker() coroutine:
-                  <br />
-                  <br />
-
-                  <img
+                    <img
                     class="codeSnippets"
-                    src="../../img/ProjectSnippets/galaxyShooter/GameOverFlicker.png"
+                    src="../../img/ProjectSnippets/proteusMotion/shadow_2.png"
                     />
+                  <br />
+                  <br />
                 </div>
                 <br />
               </div>

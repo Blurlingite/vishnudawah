@@ -237,8 +237,24 @@ See Here: https://benmarshall.me/responsive-iframes/
   padding-right: 4rem;
 }
 
-.carousel-arrow{
-  background-color:red;
+.carousel-indicators li {
+  width: 1rem;
+  height: 1rem;
+  margin: 10px;
+  background-color: red;
+}
+
+.carousel-indicators .active {
+  width: 1rem;
+  height: 1rem;
+  margin: 10px;
+  background-color: green;
+}
+
+.carousel-arrow {
+  background-color: red;
+  width: 19%;
+  height: 10%;
 }
 
 .carousel-inner img {
