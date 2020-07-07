@@ -209,10 +209,6 @@
           <div id="point1" class="projectPoint">
             <div>
               <br />
-              Player movement - When the player moves too far to the left/right
-              side of the screen they will appear on the opposite side.
-              <br />
-              <br />
               <img
                 class="codeSnippets"
                 src="../../gifs/galaxyShooterGifs/playerBounds.gif"
@@ -245,43 +241,11 @@
                 In my player script, the CalculateMovement() method tells the
                 player how to move and sets the boundary that causes the player
                 to switch to the opposite side.
-                <br />
-                <br />
-                On line 233, I assign a variable Unity's horizontal axis from
-                it's Input Manager. This Input Manager assigns keys of my
-                choosing to it so I can use them to move along the horizontal
-                axis (left/right). I chose to use the left and right arrow keys.
-                The same thing happens on line 235 but with the vertical axis
-                and the up & down arrrow keys instead (to move up/down). I use
-                the horizontal and vertical variables
-                <br />
-                <br />
-                On line 237, the direction variable controls our direction of
-                travel. It uses the horizontal variable as the x value and the
-                vertical variable as the y value in this Vector3(x,y,z) to allow
-                us to move the player both horizontally and vertically using the
-                arrow keys. We don't need the z axis in this 2D game so we pass
-                in 0.
-                <br />
-                <br />
                 "_speed" is a global variable that controls how fast the player
                 moves and when we combine it with the Vector3 that controls the
                 player's horizontal and vertical axes, it will apply that speed
                 when you press the arrow keys. We also multiply this by
                 Time.deltaTime so the player moves in real time and not game run
-                time (which would be so fast you probably wouldn't see it move).
-                <br />
-                <br />
-                On line 241, I use Mathf.Clamp() to restrict the y position of
-                the player to -3.8f and 0. Which stops the player from moving
-                below the bottom of the screen & above the middle of the screen.
-                <br />
-                <br />
-                On lines 243-247, I make the player warp to the opposite side of
-                the screen (horizontally). I use an if-else if statement to
-                check if the player is at the far left or right(which I
-                determined to be -10.46 & +10.46 respectively). If they are then
-                I just reassign the position.
               </p>
 
               <br />
@@ -293,225 +257,9 @@
             </div>
           </div>
 
-          <div id="point2" class="projectPoint">
-            <div>
-              <br />
-              Player laser - The player can shoot 1 laser at a time, unless they
-              collect a Triple Shot power up, in which case they can shoot 3 at
-              once.
-              <br />
-              <br />
-              <img
-                class="codeSnippets"
-                src="../../gifs/galaxyShooterGifs/playerLaser.gif"
-                alt="”animated”"
-              />
-            </div>
 
-            <br />
 
-            <div class="Inneraccordion">
-              <button
-                type="button"
-                class="btn btn-info bodyText child-accordion-button snippetButton"
-                data-toggle="collapse"
-                data-target="#contentA1GS2"
-              >
-                <div class="buttonText">
-                  <i class="fa fa-code"></i>
 
-                  Player Laser Code Snippets
-                </div>
-              </button>
-            </div>
-
-            <div
-              id="contentA1GS2"
-              class="collapse accordionText bodyText left-text display-text-padding"
-            >
-              <p>
-                The player script's FireLaser() allows the player to shoot a
-                laser. The _canFire float holds how much time you must wait
-                before another laser can be shot. It is calculated by taking the
-                current time the game has been running and adding my _fireRate
-                float (set to 0.15 seconds) When a Triple Shot power up is
-                collected, the _isTripleShotActive bool is changed to true,
-                which then instantiates my triple shot prefab of 3 lasers when
-                we go to fire a laser.
-              </p>
-
-              <br />
-
-              <img
-                class="codeSnippets"
-                src="../../img/ProjectSnippets/galaxyShooter/fireLaser.png"
-              />
-              <br />
-              <br />
-
-              <p>
-                In this if statement we see we can only fire a laser if
-                Time.time is greater than _canFire. So if The game was running
-                for 2.00 seconds and _canFire was calculated to be 2.15 (2.00
-                game time + 0.15 from _fireRate) we can't fire a laser until the
-                game has been running for at least 2.16 seconds.
-              </p>
-
-              <br />
-
-              <img
-                class="codeSnippets"
-                src="../../img/ProjectSnippets/galaxyShooter/canFireCheck.png"
-              />
-            </div>
-          </div>
-
-          <div id="point3" class="projectPoint">
-            <div>
-              <br />
-              Enemy Spawn & Attack - Enemies will spawn & attack routinely.
-              <br />
-              <br />
-              <img
-                class="codeSnippets"
-                src="../../gifs/galaxyShooterGifs/enemySpawnAndAttack.gif"
-                alt="”animated”"
-              />
-            </div>
-
-            <br />
-
-            <div class="Inneraccordion">
-              <button
-                type="button"
-                class="btn btn-info bodyText child-accordion-button snippetButton"
-                data-toggle="collapse"
-                data-target="#contentA1GS3"
-              >
-                <div class="buttonText">
-                  <i class="fa fa-code"></i>
-
-                  Enemy Spawn Code Snippets
-                </div>
-              </button>
-            </div>
-
-            <div
-              id="contentA1GS3"
-              class="collapse accordionText bodyText left-text display-text-padding"
-            >
-              <p>
-                I used a coroutine to have an enemy spawn every 3 seconds. I use
-                the _stopSpawning bool to stop enemies from spawning when the
-                game has ended. When the game ends, (because the player has
-                died), I change _stopSpawning to true which will stop lines
-                46-55 from executing.
-                <br />
-                <br />
-                On line 48, Random.Range() will genertate a random x position
-                (within the range of the screen, which I determined to be -8 to
-                8) for the enemy to spawn at.
-                <br />
-                <br />
-                Line 52 will take the newly spawned Enemy and parent it to a
-                container object in Unity so that the hierarchy won't be
-                cluttered with Enemy objects
-              </p>
-
-              <br />
-
-              <img
-                class="codeSnippets"
-                src="../../img/ProjectSnippets/galaxyShooter/enemySpawnCoroutine.png"
-              />
-
-              <br />
-              <br />
-              The arrow shows the container object used to hold all spawned
-              enemies.
-              <br />
-              <br />
-
-              <img
-                class="codeSnippets"
-                src="../../img/ProjectSnippets/galaxyShooter/EnemyContainer.png"
-              />
-              <br />
-              <br />
-            </div>
-            <br />
-
-            <div class="Inneraccordion">
-              <button
-                type="button"
-                class="btn btn-info bodyText child-accordion-button snippetButton"
-                data-toggle="collapse"
-                data-target="#contentA1GS4"
-              >
-                <div class="buttonText">
-                  <i class="fa fa-code"></i>
-
-                  Enemy Attack Code Snippets
-                </div>
-              </button>
-            </div>
-
-            <div
-            id="contentA1GS4"
-            class="collapse accordionText bodyText left-text display-text-padding"
-           >
-            <p>
-              The enemy attacks are very similar to the player's except that
-              the rate at which they fire is randomized, so the player can't
-              memorize the enemy's attack pattern.
-              <br />
-              <br />
-              On line 110, I am accessing an array of audio sources that are
-              on the enemy object. I have 2 as shown below: 1 for the
-              enemy's explosion sound and the other for it's laser sound.
-              <br />
-              <br />
-              On line 112 I use a prefab to instantiate the enemy's laser.
-              That prefab I assigned is an object that holds 2 of the laser
-              objects (also used by the player), giving the enemy a dual
-              laser to shoot.
-            </p>
-
-            <br />
-
-            <img
-              class="codeSnippets"
-              src="../../img/ProjectSnippets/galaxyShooter/enemyAttack.png"
-            />
-
-            <br />
-            <br />
-            The arrow shows the container object used to hold all spawned
-            enemies.
-            <br />
-            <br />
-
-            <img
-              class="codeSnippets"
-              src="../../img/ProjectSnippets/galaxyShooter/EnemyContainer.png"
-            />
-
-            <br />
-            <br />
-            <br />
-            Here are the enemy's audio sources:
-            <br />
-            <br />
-
-            <img
-              class="codeSnippets"
-              src="../../img/ProjectSnippets/galaxyShooter/enemyAudioSources.png"
-            />
-          </div>
-
-          <br />
-
-          </div>
         </div>
       </div>
         <!-- Parent Accordion 1 END -->
@@ -531,233 +279,23 @@
 
           <div id="accordionContents2" class="collapse">
             <div class="accordionDesc accordionText bodyText left-text display-text-padding">
-              Wow, what accurate collisions this game has! All the better to
-              destroy the enemies with.
+             Here are some tests in the Input component.
               <br />
               <br />
-              Below is some information on collisions between the player, power
-              ups and enemies. They allow us to do things like applying a power
-              up effect when collecting a power up and destroying objects with
-              lasers.
+              In the beforeEach(), we replace React's useState with our fake function (jest.fn()). We will return an array with an empty string and our mockSetCurrentGuess. The "mockSetCurrentGuess" will let us see when useState is called. The empty string represents the arguments that useState() will be called with. In these tests we want to see if useState() was called and if it was called with the correct arguments. 
             </div>
 
             <div id="point4" class="projectPoint">
               <div>
                 <br />
-                Power Up Collisions - The player gets certain abilities
-                depending on which power up they collected.
-
-                <br />
-                <br />
                 <img
                   class="codeSnippets"
-                  src="../../gifs/galaxyShooterGifs/shieldUp.gif"
-                  alt="”animated”"
+                  src="../../img/ProjectSnippets/jotto/useStateTest.png"
                 />
               </div>
-
-              <br />
-
-              <div class="Inneraccordion">
-                <button
-                  type="button"
-                  class="btn btn-info bodyText child-accordion-button snippetButton"
-                  data-toggle="collapse"
-                  data-target="#contentA2GS1"
-                >
-                  <div class="buttonText">
-                    <i class="fa fa-code"></i>
-
-                    Power Up Collision Snippet
-                  </div>
-                </button>
-              </div>
-
-              <div
-                id="contentA2GS1"
-                class="collapse accordionText bodyText left-text display-text-padding"
-              >
-                <p>
-                  Since this is a 2D game, I am using Unity's OnTriggerEnter2D()
-                  method to detect & react to collisions. I used that instead of
-                  OnCollisionEnter2D() because the power up will serve as a
-                  trigger. Meaning, I don't want to apply a force on the player
-                  when the power up collides with it (if it did that, the power
-                  up would push the player back as if the power up damages the
-                  player when they collect it).
-                  <br />
-                  <br />
-                  On line 47, a switch statement is used to change one of the
-                  player's bools depending on the incoming powerupID (which is
-                  determined by which power up the player collected).
-                </p>
-
-                <br />
-
-                <img
-                  class="codeSnippets"
-                  src="../../img/ProjectSnippets/galaxyShooter/powerupCollision.png"
-                />
-              </div>
-            </div>
-
-            <div id="point5" class="projectPoint">
-              <div>
-                <br />
-                Laser Collisions
-
-                <br />
-                <br />
-
-                <img
-                  class="codeSnippets"
-                  src="../../gifs/galaxyShooterGifs/laserCollision.gif"
-                  alt="”animated”"
-                />
-              </div>
-
-              <br />
-
-              <div class="Inneraccordion">
-                <button
-                  type="button"
-                  class="btn btn-info bodyText child-accordion-button snippetButton"
-                  data-toggle="collapse"
-                  data-target="#contentA2GS5"
-                >
-                  <div class="buttonText">
-                    <i class="fa fa-code"></i>
-
-                    Laser Collision Snippet
-                  </div>
-                </button>
-              </div>
-
-              <div
-                id="contentA2GS5"
-                class="collapse accordionText bodyText left-text display-text-padding"
-              >
-                <p>
-                  When the player's laser collides with an object, the laser is
-                  destroyed first (line 156)the enemy's speed is set to 0 to
-                  stop it from moving while destroyed(line 159) the enemy's
-                  collider is destroyed (line 162), then we destroy the enemy
-                  object (line 167). The order of destruction is important
-                  because if we destroyed the enemy object first, this code is
-                  destroyed with it(because it is attached to the enemy object
-                  with the Enemy.cs script) and won't run.
-                  <br />
-                  <br />
-                  On line 151, I am checking to see if the laser that collided
-                  with the enemy is an enemy laser. If it is, do nothing so that
-                  other enemies can't destroy this enemy.
-                  <br />
-                  <br />
-                  On line 167, I passed in the amount of time to wait as the
-                  second argument before destroying the enemy object. This is to
-                  give the explosion animation and sound effect time to play
-                  before the enemy is destroyed.
-                </p>
-
-                <br />
-
-                <img
-                  class="codeSnippets"
-                  src="../../img/ProjectSnippets/galaxyShooter/laserCollisionWithEnemy.png"
-                />
-              </div>
-            </div>
-
-            <div id="point6" class="projectPoint">
-              <div>
-                <br />
-                Enemy Collisions with Player
-
-                <br />
-                <br />
-
-                <img
-                  class="codeSnippets"
-                  src="../../gifs/galaxyShooterGifs/EnemyPlayerCollision.gif"
-                  alt="”animated”"
-                />
-              </div>
-
-              <br />
-
-              <div class="Inneraccordion">
-                <button
-                  type="button"
-                  class="btn btn-info bodyText child-accordion-button snippetButton"
-                  data-toggle="collapse"
-                  data-target="#contentA2GS6"
-                >
-                  <div class="buttonText">
-                    <i class="fa fa-code"></i>
-
-                    Enemy Collision with Player Snippets
-                  </div>
-                </button>
-              </div>
-
-              <div
-                id="contentA2GS6"
-                class="collapse accordionText bodyText left-text display-text-padding"
-              >
-                <p>
-                  When an enemy collides with the player, we award points to the
-                  player while also damaging them as shown in lines 129-133.
-                </p>
-
-                <br />
-
-                <img
-                  class="codeSnippets"
-                  src="../../img/ProjectSnippets/galaxyShooter/EnemyDetectsPlayer.png"
-                />
-
-                <br />
-                <br />
-
-                <p>
-                  Below is some code from the Damage() method (as you saw being
-                  called above) in the Player script. The Player script has a
-                  _lives variable to tell how many lives the player has.
-                  <br />
-                  <br />
-                  Line 457 makes sure the player loses a life when they take
-                  damage.
-                  <br />
-                  <br />
-                  Lines 459-466 is used to show visually, the damage the player
-                  has taken. When we have 2 lives, the right engine is damaged.
-                  When we have 1 life left, the left engine is damaged. The
-                  damaged right and left engines are actually child objects to
-                  the player that are inactive by default. I set them active
-                  depending on how many lives the player has.
-                  <br />
-                  <br />
-                  On lines 470-479, I am checking if the player has no lives
-                  left, and if that is true, the player is destroyed (which will
-                  also terminate this script).
-                </p>
-
-                <br />
-
-                <img
-                  class="codeSnippets"
-                  src="../../img/ProjectSnippets/galaxyShooter/PlayerDamageMethod.png"
-                />
-
-                <br />
-                <br />
-              </div>
-              <br />
-
             </div>
           </div>
         </div>
-
         <!-- Parent Accordion 2 END -->
       </div>
     </div>
