@@ -193,17 +193,14 @@
 
         <div id="accordionContents1" class="collapse">
           <div class="accordionDesc accordionText bodyText left-text display-text-padding">
-            The Player(s) are able to move within a certain range of the screen
-            and can fire a laser with a 1 second cool down before they can fire
-            again. I created a spawn manager that controls how the enemies are
-            spawned. It uses a coroutine so that the game will wait a certain
-            amount of seconds (3 seconds) and then spawn another enemy. The
-            enemy can fire 2 lasers at once as shown by my enemyLaser
-            GameObject. The enemy's lasers also have a cool down that is
-            determined by my _canFire variable. The _laserPrefab used in
-            enemyLaser is actually a container that holds 2 laser objects. This
-            gives the enemy an edge because a direct hit means the Player will
-            lose 2 lives. Yikes! They mean business! (The business of misery)
+            The GuessedWords component will display all the guesses the user makes.
+
+            <br/>
+            <br/>
+            I am using a setup function (which you can see in my GitHub repo) to add an array of guesses to the state.
+            That function returns a shallow version of my GuessedWords component, meaning only the parent component is rendered. 
+            That way we can ignore the behavior of all the child components within GuessedWords while testing it.
+            The 3rd test is what checks that we have the correct amount of guesses in the state.
           </div>
 
           <div id="point1" class="projectPoint">
@@ -211,50 +208,12 @@
               <br />
               <img
                 class="codeSnippets"
-                src="../../gifs/galaxyShooterGifs/playerBounds.gif"
-                alt="”animated”"
+                src="../../img/ProjectSnippets/jotto/guessedWordsTest-Redux.png"
               />
             </div>
 
             <br />
 
-            <div class="Inneraccordion">
-              <button
-                type="button"
-                class="btn btn-info bodyText child-accordion-button snippetButton"
-                data-toggle="collapse"
-                data-target="#contentA1GS1"
-              >
-                <div class="buttonText">
-                  <i class="fa fa-code"></i>
-
-                  Player Movement Code Snippet
-                </div>
-              </button>
-            </div>
-
-            <div
-              id="contentA1GS1"
-              class="collapse accordionText bodyText left-text display-text-padding"
-            >
-              <p>
-                In my player script, the CalculateMovement() method tells the
-                player how to move and sets the boundary that causes the player
-                to switch to the opposite side.
-                "_speed" is a global variable that controls how fast the player
-                moves and when we combine it with the Vector3 that controls the
-                player's horizontal and vertical axes, it will apply that speed
-                when you press the arrow keys. We also multiply this by
-                Time.deltaTime so the player moves in real time and not game run
-              </p>
-
-              <br />
-
-              <img
-                class="codeSnippets"
-                src="../../img/ProjectSnippets/galaxyShooter/playerCalculateMovement.png"
-              />
-            </div>
           </div>
 
 
@@ -282,7 +241,7 @@
              Here are some tests in the Input component.
               <br />
               <br />
-              In the beforeEach(), we replace React's useState with our fake function (jest.fn()). We will return an array with an empty string and our mockSetCurrentGuess. The "mockSetCurrentGuess" will let us see when useState is called. The empty string represents the arguments that useState() will be called with. In these tests we want to see if useState() was called and if it was called with the correct arguments. 
+              In the beforeEach(), we replace React's useState with our fake function (jest.fn()). We will return an array with an empty string and our mockSetCurrentGuess. The "mockSetCurrentGuess" will let us see when useState is called. The empty string represents the arguments that useState() will be called with. In these tests, we want to see if useState() was called and if it was called with the correct arguments. 
             </div>
 
             <div id="point4" class="projectPoint">
