@@ -1,962 +1,573 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/home.css" rel="stylesheet" />
-
-    <title>Vishnu's Portfolio</title>
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vishnu Dawah | Software Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <link href="css/responsiveStyle.css" rel="stylesheet" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+
+
   </head>
-  <body style="height:4200px" class="oldSiteBody">
-    <div class="container">
+  <body>
+
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light sticky-top navbar-padding"
+    >
+      <div class="container-fluid navbar-container">
+        <a href="index.html" class="navbar-brand">
+          <!-- <span class="body-text">Vishnu Dawah</span> -->
+          <img id="siteIcon" src="img/blurlingiteLogo.png" />
+        </a>
+        <button
+          class="navbar-toggler hamburger-icon"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link center-text"
+                ><span class="body-text">Home</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link center-text">
+                <span class="body-text">About</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link center-text">
+                <span class="body-text">Projects</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link center-text">
+                <span class="body-text">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Top Gif -->
+    <div class="container-fluid projects-trailer-gif-cont">
       <div class="row">
-        <div class="col-md-12">
-          <div class="row">
-            <div id="topButtons" class="col-md-12">
-              <!-- <button type="button" class="btn btn-success">
-  						Home
-  					</button>
-
-            <button type="button" class="btn btn-success">
-              Contact Me
-            </button> -->
-            </div>
-          </div>
-
-          <br />
-          <br />
-
-          <div class="row">
-            <div class="col-md-12">
-              <h3 id="vishnuDawah" class="AboutMe">
-                Vishnu Dawah - Full Stack Software Developer
-              </h3>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <h3 id="aboutMeParagraph" class="AboutMe">
-                I am an aspiring software developer that enjoys learning about
-                coding and putting what I learned into practice. I love digging
-                into code to understand how it works, what it’s doing, finding
-                ways to fix any problems and making more efficient adjustments.
-                I have built applications using the MERN stack Java, HTML, CSS,
-                Javascript, jQuery, AJAX, Apache Maven, Apache Tomcat, MySQL and
-                Spring.
-              </h3>
-            </div>
-          </div>
-
-          <br />
-          <br />
-          <br />
-
-          <div class="row">
-            <div class="col-md-12">
-              <h2 id="projects" class="text-center">
-                Projects
-              </h2>
-            </div>
-
-            <!-- Content -->
-            <div></div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <br />
-              <br />
-              <br />
-
-              <div class="row">
-                <div class="projectBackground col-md-12">
-                  <div>
-                    <h1 class="text-center">
-                      DevConnector
-                    </h1>
-
-                    <h3 class="text-center">
-                      Made using MongoDB, Express.js, React.js, Redux & Node.js
-                    </h3>
-
-                    <p class="projectDescription">
-                      <br />
-
-                      A social network for developers built with Node, Express,
-                      React, Redux & MongoDB. Once registered, a user can create
-                      a profile, view posts and comments by other users, and
-                      make/remove their posts and comments. A user can delete
-                      their own account. This application uses JSON Web Tokens
-                      to authenticate users.
-                    </p>
-                    <br />
-                  </div>
-
-                  <div
-                    id="DevCarousel"
-                    class="carousel slide"
-                    data-ride="carousel"
-                  >
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                      <li
-                        data-target="#DevCarousel"
-                        data-slide-to="0"
-                        class="active"
-                      ></li>
-                      <li data-target="#DevCarousel" data-slide-to="1"></li>
-                      <li data-target="#DevCarousel" data-slide-to="2"></li>
-                      <li data-target="#DevCarousel" data-slide-to="3"></li>
-                      <li data-target="#DevCarousel" data-slide-to="4"></li>
-                      <li data-target="#DevCarousel" data-slide-to="5"></li>
-                      <li data-target="#DevCarousel" data-slide-to="6"></li>
-                      <li data-target="#DevCarousel" data-slide-to="7"></li>
-                      <li data-target="#DevCarousel" data-slide-to="8"></li>
-                      <li data-target="#DevCarousel" data-slide-to="9"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <img
-                          src="img/devConnector/landingDev.png"
-                          alt="signIn"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/devConnector/signIn.png"
-                          alt="signIn"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/devConnector//dashboard.png"
-                          alt="dashboard"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/devConnector/makeProfile.png"
-                          alt="makeProfile"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/devConnector/post1.png"
-                          alt="post1"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/devConnector/post2.png"
-                          alt="post2"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/devConnector/education1.png"
-                          alt="education1"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/devConnector/education2.png"
-                          alt="education2"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/devConnector/comment1.png"
-                          alt="comment1"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/devConnector/comment2.png"
-                          alt="comment2"
-                          style="width:100%;"
-                        />
-                      </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a
-                      class="left carousel-control"
-                      href="#DevCarousel"
-                      data-slide="prev"
-                    >
-                      <span class="glyphicon glyphicon-chevron-left"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a
-                      class="right carousel-control"
-                      href="#DevCarousel"
-                      data-slide="next"
-                    >
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-
-                  <br />
-                  <div class="x whiteText col-md-6">
-                    <div class="buttonText gameLinks col-md-5">
-                      View the site:
-                    </div>
-
-                    <div class="gameLinks col-md-1">
-                      <a
-                        class="btn buttonLink whiteText"
-                        href="https://vishnusdevconnector.herokuapp.com/"
-                        target="_blank"
-                      >
-                        <p class="buttonText">Dev Connector</p></a
-                      >
-                    </div>
-                  </div>
-
-                  <div class="x whiteText col-md-6">
-                    <div class="buttonText gameLinks col-md-5">
-                      See the code:
-                    </div>
-
-                    <div class="gameLinks col-md-1">
-                      <a
-                        class="btn buttonLink whiteText"
-                        href="https://github.com/Blurlingite/MERN-apps"
-                        target="_blank"
-                      >
-                        <p class="buttonText">Github</p></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <br />
-              <br />
-              <br />
-
-              <div class="row">
-                <div class="projectBackground col-md-12">
-                  <div>
-                    <h1 class="text-center">
-                      Vending Machine with REST API
-                    </h1>
-
-                    <h3 class="text-center">
-                      Made using AJAX, jQuery, HTML and CSS
-                    </h3>
-
-                    <p class="projectDescription">
-                      <br />
-
-                      For this project, I was challenged to create a vending
-                      machine web application. You can select an item by
-                      clicking on one of the blue item buttons, which are
-                      dynamically made. Each blue item button tells you the
-                      name, price, and inventory of the item. All of this comes
-                      from a supplied Vending Machine REST API. This is
-                      accomplished when I run the VendingMachineRESTWebService
-                      jar file (located in my project’s “target” folder) in my
-                      terminal. Once I get all the information I need to make
-                      each item button from this web service, I plug in the
-                      information into a template that is in a function called
-                      HTMLItem() in my javascript file.
-                      <br />
-                      <br />
-                      If you buy an item, and that item’s cost is less than what
-                      you put in and it is not out of stock, the item will vend
-                      and will display a “thank you” message. If the item cost
-                      is more than what you insert, then the application will
-                      tell you how much more money you need to insert to buy the
-                      item and will let you put in more money. If the item is
-                      sold out, a “sold out” message will be displayed.
-                      <br />
-                      <br />
-                    </p>
-                  </div>
-
-                  <div
-                    id="VMCarousel"
-                    class="carousel slide"
-                    data-ride="carousel"
-                  >
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                      <li
-                        data-target="#VMCarousel"
-                        data-slide-to="0"
-                        class="active"
-                      ></li>
-                      <li data-target="#VMCarousel" data-slide-to="1"></li>
-                      <li data-target="#VMCarousel" data-slide-to="2"></li>
-                      <li data-target="#VMCarousel" data-slide-to="3"></li>
-                      <li data-target="#VMCarousel" data-slide-to="4"></li>
-                      <li data-target="#VMCarousel" data-slide-to="5"></li>
-                      <li data-target="#VMCarousel" data-slide-to="6"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <img
-                          src="img/pichusVM/happyVM1.png"
-                          alt="happyVM1"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/pichusVM/happyVM2.png"
-                          alt="happyVM2"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/pichusVM/happyVM3.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/pichusVM/insufficientFunds1.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/pichusVM/insufficientFunds2.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/pichusVM/soldOut1.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/pichusVM/soldOut4.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a
-                      class="left carousel-control"
-                      href="#VMCarousel"
-                      data-slide="prev"
-                    >
-                      <span class="glyphicon glyphicon-chevron-left"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a
-                      class="right carousel-control"
-                      href="#VMCarousel"
-                      data-slide="next"
-                    >
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-
-                  <br />
-                  <div class="x whiteText col-md-12">
-                    <div class="buttonText gameLinks col-md-6">
-                      See the code:
-                    </div>
-
-                    <div class="gameLinks col-md-6">
-                      <a
-                        class="btn buttonLink whiteText"
-                        href="https://github.com/Blurlingite/vending-machine-using-REST-API"
-                        target="_blank"
-                      >
-                        <p class="buttonText">Github</p></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <br />
-              <br />
-              <br />
-
-              <div class="row">
-                <div class="projectBackground col-md-12">
-                  <div>
-                    <h1 class="text-center">
-                      Superhero Sightings
-                    </h1>
-
-                    <h3 class="text-center">
-                      Made using Java, MySQL, JSPs, Spring JDBC, Spring Security
-                      and Apache Tomcat
-                    </h3>
-
-                    <p class="projectDescription">
-                      <br />
-
-                      In this next web application, I focused on functionality
-                      and general layout of the web pages over styling. This
-                      application has 6 entities: Superpowers, Persons,
-                      Organizations, Locations, Sightings, and Users. You will
-                      be able to create, read, update, and delete from these 6
-                      entities. This application is equipped with spring
-                      security, so you can only perform all those actions if you
-                      are an admin. If you are logged in as a user, all you can
-                      do is read from each entity and report a sighting.
-                      <br />
-                      <br />
-                      There are links attached to the entities that you can
-                      click on to view information about that entity(for
-                      example, when you click on a Person, you can see where
-                      that person was sighted, the powers they have, and which
-                      organizations they are apart of).
-                      <br />
-                      <br />
-                    </p>
-                  </div>
-
-                  <h3 class="redText">
-                    NOTE: Make sure you run the sql file in MySQL Workbench
-                    first so the application has data to work with.
-                    <br />
-                    <br />
-
-                    Also, make sure you change the username and password in the
-                    spring-persistence.xml to match your MySQL Workbench
-                    username and password.
-                  </h3>
-
-                  <div
-                    id="superheroSightingsCarousel"
-                    class="carousel slide"
-                    data-ride="carousel"
-                  >
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="0"
-                        class="active"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="1"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="2"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="3"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="4"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="5"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="6"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="7"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="8"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="9"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="10"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="11"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="12"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="13"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="14"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="15"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="16"
-                      ></li>
-                      <li
-                        data-target="#superheroSightingsCarousel"
-                        data-slide-to="17"
-                      ></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <img
-                          src="img/superheroSightings/ssHomePage.png"
-                          alt="happyVM1"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/adminLogIn.png"
-                          alt="happyVM2"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/createStarfire1.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/createStarfire2.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/readStorm1.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/readStorm2.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/editStarfire1.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/editStarfire2.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/editStarfire3.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/editStarfire4.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/editStarfire5.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/deleteMagneto1.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/deleteMagneto2.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/userLogin.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/userPerson.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/starfireSight1.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/starfireSight2.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/superheroSightings/starfireSight3.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a
-                      class="left carousel-control"
-                      href="#superheroSightingsCarousel"
-                      data-slide="prev"
-                    >
-                      <span class="glyphicon glyphicon-chevron-left"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a
-                      class="right carousel-control"
-                      href="#superheroSightingsCarousel"
-                      data-slide="next"
-                    >
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-
-                  <br />
-
-                  <div class="x whiteText col-md-12">
-                    <div class="buttonText gameLinks col-md-6">
-                      See the code:
-                    </div>
-
-                    <div class="gameLinks col-md-6">
-                      <a
-                        class="btn buttonLink whiteText"
-                        href="https://github.com/Blurlingite/SuperheroSightings"
-                        target="_blank"
-                      >
-                        <p class="buttonText">Github</p></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <br />
-              <br />
-              <br />
-
-              <div class="row">
-                <div class="projectBackground col-md-12">
-                  <div>
-                    <h1 class="text-center">
-                      Flooring Orders
-                    </h1>
-
-                    <h3 class="text-center">
-                      Made using Java with the Netbeans IDE
-                    </h3>
-
-                    <p class="projectDescription">
-                      <br />
-
-                      This is a console application that can create, read,
-                      update, and delete orders using input from the user. The
-                      user can select a state, product and input an area amount
-                      that they want covered. Exceptions are caught and
-                      displayed if the user enters incorrectly formatted input.
-                      The application creates files to store orders on the date
-                      they were created and uses the date in the file name. I
-                      was actually really proud of myself for being able to
-                      accomplish this. I thought it was cool that I could make
-                      my application make files for me, instead of manually
-                      creating the files.
-                      <br />
-                      <br />
-                    </p>
-                  </div>
-
-                  <div
-                    id="flooringOrdersCarousel"
-                    class="carousel slide"
-                    data-ride="carousel"
-                  >
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                      <li
-                        data-target="#flooringOrdersCarousel"
-                        data-slide-to="0"
-                        class="active"
-                      ></li>
-                      <li
-                        data-target="#flooringOrdersCarousel"
-                        data-slide-to="1"
-                      ></li>
-                      <li
-                        data-target="#flooringOrdersCarousel"
-                        data-slide-to="2"
-                      ></li>
-                      <li
-                        data-target="#flooringOrdersCarousel"
-                        data-slide-to="3"
-                      ></li>
-                      <li
-                        data-target="#flooringOrdersCarousel"
-                        data-slide-to="4"
-                      ></li>
-                      <li
-                        data-target="#flooringOrdersCarousel"
-                        data-slide-to="5"
-                      ></li>
-                      <li
-                        data-target="#flooringOrdersCarousel"
-                        data-slide-to="6"
-                      ></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <img
-                          src="img/flooringOrders/createOrder.png"
-                          alt="happyVM1"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/flooringOrders/readOrder.png"
-                          alt="happyVM2"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/flooringOrders/editOrder1.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/flooringOrders/editOrder2.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/flooringOrders/editOrder3.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/flooringOrders/removeOrder1.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-
-                      <div class="item">
-                        <img
-                          src="img/flooringOrders/removeOrder2.png"
-                          alt="happyVM3"
-                          style="width:100%;"
-                        />
-                      </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a
-                      class="left carousel-control"
-                      href="#flooringOrdersCarousel"
-                      data-slide="prev"
-                    >
-                      <span class="glyphicon glyphicon-chevron-left"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a
-                      class="right carousel-control"
-                      href="#flooringOrdersCarousel"
-                      data-slide="next"
-                    >
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="x whiteText col-md-12">
-                  <br />
-
-                  <div class="buttonText gameLinks col-md-6">
-                    See the code:
-                  </div>
-
-                  <div class="gameLinks col-md-6">
-                    <a
-                      class="btn buttonLink whiteText"
-                      href="https://github.com/Blurlingite/FlooringOrders"
-                      target="_blank"
-                    >
-                      <p class="buttonText">Github</p></a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <br />
-              <br />
-              <br />
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <div class="col-md-12">
-                <h1 id="contactMeText" class="whiteText centerText">
-                  Contact Me
-                </h1>
-              </div>
-
-              <br />
-
-              <br />
-
-              <br />
-
-              <br />
-
-              <h3 id="contactMe" class="whiteText">
-                <div class="col-md-4">
-                  <p class="emailPadding centerPadding">vkdawah@gmail.com</p>
-                </div>
-
-                <div class="col-md-4">
-                  <a
-                    class="buttonText btn buttonLink"
-                    href="https://linkedin.com/in/vishnudawah"
-                    target="_blank"
-                    >LinkedIn</a
-                  >
-                </div>
-
-                <div class="col-md-4">
-                  <a
-                    class="buttonText btn buttonLink"
-                    href="https://github.com/blurlingite"
-                    target="_blank"
-                    >Github</a
-                  >
-                </div>
-              </h3>
-            </div>
-          </div>
+        <div class="class col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 animation">
+          <!-- <img id="firstImage" src="mmm.png" alt="”animated”" />
+           -->
+
+
+           <div class="stars"></div>
+           <div class="twinkling"></div>
+           <div class="clouds">
+        </div>
+      </div>
+    </div>
+ 
+    <span class="anchor" id="about"></span>
+    <div class="section"></div>
+    <!-- About Me Section -->
+    <div class="container-fluid padding aboutContainer">
+      <div class="row padding">
+        <div class="col-lg-12">
+          <h2 id="aboutMeTitle" class="heading-text">About Me</h2>
+          <p class="body-text">
+            Hello! I’m Vishnu, a software developer living in New York. I’ve
+            been programming for a little over two years since graduating from the
+            TechHire OpenCode bootcamp. I have previously tutored students in
+            software development and have some experience working in a startup environment.
+             I’ve always had an interest in creating things ever since I was a kid. Whenever
+            the power would go out in my family’s house (which happened quite a
+            few times) I’d make up boardgames or modify the ones we had so my
+            siblings and I wouldn’t be bored.
+            <br />
+            <br />
+            Coding is my life, but when I do have free time I do like to unwind
+            with some videogames. Occasionally, I'll also visit some museums
+            because I love learning about other people's lives and seeing their
+            work. My favorite one I've been to so far was the International Spy
+            Museum in Washington D.C.
+            <br />
+            <br />
+            I am now looking for a software development position and am open to relocating
+            to most parts of the world!
+          </p>
         </div>
       </div>
     </div>
 
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/home.js"></script>
+    <!-- <hr class="my-4" /> -->
+    <!-- Fixed background -->
+    <figure>
+      <div class="fixed-wrap">
+        <div id="fixed"></div>
+      </div>
+    </figure>
+
+    <span class="anchor" id="projects"></span>
+    <div class="section"></div>
+    <!-- Projects -->
+    <div class="container-fluid padding projectsTitle">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="dislay-4">Projects</h1>
+
+          <span>Click on a card to learn more</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="container-fluid projectsContainer">
+      <div class="row">
+        <!-- ALL PROJECTS START -->
+
+        <!-- PROJECT 1 START -->
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card-container">
+            <a href="site/Projects/voyaFinancial.html"
+              ><div class="project-item">
+                <div
+                  class="project-img zoom"
+                  style="background-image: url(img/voya-financial.png)"
+                ></div>
+
+                <div class="project-title-container">
+                  <div class="project-title">
+                    <span>Voya Financial Internship</span>
+                  </div>
+                </div>
+              </div></a
+            >
+            <div class="project-tags-container">
+              <div class="project-tag" style="background-color: #0f579f">
+                <span>Java</span>
+              </div>
+              <div class="project-tag" style="background-color: #1E90FF">
+                <span>JUnit</span>
+              </div>
+            </div>
+            <div class="project-desc-container">
+              <div class="project-desc">
+                <span>Web application development & testing </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT 1 END -->
+
+        <!-- PROJECT 2 START -->
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card-container">
+            <a href="site/Projects/proteusMotion.html"
+              ><div class="project-item">
+                <div
+                  class="project-img zoom"
+                  style="background-image: url(img/proteus-motion.jpg)"
+                ></div>
+
+                <div class="project-title-container">
+                  <div class="project-title">
+                    <span>Proteus Motion Internship</span>
+                  </div>
+                </div>
+              </div></a
+            >
+            <div class="project-tags-container">
+              <div class="project-tag" style="background-color: #0f579f">
+                <span>Typescript</span>
+              </div>
+              <div class="project-tag" style="background-color: #1E90FF">
+                <span>ReactJS</span>
+              </div>
+              <div class="project-tag" style="background-color: #6A5ACD">
+                <span>ThreeJS</span>
+              </div>
+              <div class="project-tag" style="background-color: #DC143C">
+                <span>BabylonJS</span>
+              </div>
+            </div>
+            <div class="project-desc-container">
+              <div class="project-desc">
+                <span>3D visuals for biofeedback system</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT 2 END -->
+
+        <!-- PROJECT 2 START -->
+        <!-- <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card-container">
+            <a href="site/Projects/devConnector.html"
+              ><div class="project-item">
+                <div
+                  class="project-img zoom"
+                  style="background-image: url(img/devConnector/devConnector-thumbnail.png)"
+                ></div>
+                <div class="project-title-container">
+                  <div class="project-title">
+                    <span>DevConnector</span>
+                  </div>
+                </div>
+              </div></a
+            >
+            <div class="project-tags-container">
+              <div class="project-tag" style="background-color: #0f579f">
+                <span>MongoDB</span>
+              </div>
+              <div class="project-tag" style="background-color: #666600">
+                <span>Express</span>
+              </div>
+              <div class="project-tag" style="background-color: #1E90FF">
+                <span>ReactJS</span>
+              </div>
+              <div class="project-tag" style="background-color: #1E90FF">
+                <span>Redux</span>
+              </div>
+              <div class="project-tag" style="background-color: #228B22">
+                <span>Node</span>
+              </div>
+            </div>
+            <div class="project-desc-container">
+              <div class="project-desc">
+                <span>Social Network for developers</span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- PROJECT 2 END -->
+
+        <!-- PROJECT 3 START -->
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card-container">
+            <a href="site/Projects/jotto.html"
+              ><div class="project-item">
+                <div
+                  class="project-img zoom"
+                  style="background-image: url(img/jotto/jotto-thumbnail.png)"
+                ></div>
+                <div class="project-title-container">
+                  <div class="project-title">
+                    <span>Jotto</span>
+                  </div>
+                </div>
+              </div></a
+            >
+            <div class="project-tags-container">
+              <div class="project-tag" style="background-color: #0f579f">
+                <span>Typescript</span>
+              </div>
+              <div class="project-tag" style="background-color: #1E90FF">
+                <span>ReactJS</span>
+              </div>
+              <div class="project-tag" style="background-color: #228B22">
+                <span>Node</span>
+              </div>
+              <div class="project-tag" style="background-color: #3CB028">
+                <span>Jest</span>
+              </div>
+              <div class="project-tag" style="background-color: #cc7000">
+                <span>Enzyme</span>
+              </div>
+            </div>
+            <div class="project-desc-container">
+              <div class="project-desc">
+                <span>Social Network for developers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT 3 END -->
+
+        <!-- PROJECT 4 START -->
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card-container">
+            <a href="site/Projects/superheroSightings.html"
+              ><div class="project-item">
+                <div
+                  class="project-img zoom"
+                  style="background-image: url(img/superheroSightings/superheroSightings-thumbnail.png)"
+                ></div>
+                <div class="project-title-container">
+                  <div class="project-title">
+                    <span>Superhero Sightings</span>
+                  </div>
+                </div>
+              </div></a
+            >
+            <div class="project-tags-container">
+              <div class="project-tag" style="background-color: #0f579f">
+                <span>Java</span>
+              </div>
+              <div class="project-tag" style="background-color: #cc7000">
+                <span>MySQL</span>
+              </div>
+              <div class="project-tag" style="background-color: #228B22">
+                <span>Spring</span>
+              </div>
+              <div class="project-tag" style="background-color: #666600">
+                <span>Apache Tomcat</span>
+              </div>
+            </div>
+            <div class="project-desc-container">
+              <div class="project-desc">
+                <span>Superhero/Supervillain tracker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT 4 END -->
+
+        <!-- PROJECT 5 START -->
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card-container">
+            <a href="site/Projects/vendingMachine.html"
+              ><div class="project-item">
+                <div
+                  class="project-img zoom"
+                  style="background-image: url(img/pichusVM/vendingMachine-thumbnail.png)"
+                ></div>
+                <div class="project-title-container">
+                  <div class="project-title">
+                    <span> Vending Machine with REST API</span>
+                  </div>
+                </div>
+              </div></a
+            >
+            <div class="project-tags-container">
+              <div class="project-tag" style="background-color: #0f579f">
+                <span>AJAX</span>
+              </div>
+              <div class="project-tag" style="background-color: #228B22">
+                <span>jQuery</span>
+              </div>
+              <div class="project-tag" style="background-color: #cc7000">
+                <span>HTML</span>
+              </div>
+              <div class="project-tag" style="background-color: dodgerblue">
+                <span>CSS</span>
+              </div>
+            </div>
+            <div class="project-desc-container">
+              <div class="project-desc">
+                <span>Vending machine web application</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT 5 END -->
+
+        <!-- PROJECT 6 START -->
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card-container">
+            <a href="site/Projects/flooringOrders.html"
+              ><div class="project-item">
+                <div
+                  class="project-img zoom"
+                  style="background-image: url(img/flooringOrders/createOrder.png)"
+                ></div>
+                <div class="project-title-container">
+                  <div class="project-title">
+                    <span>Flooring Orders</span>
+                  </div>
+                </div>
+              </div></a
+            >
+            <div class="project-tags-container">
+              <div class="project-tag" style="background-color: #0f579f">
+                <span>Java</span>
+              </div>
+            </div>
+            <div class="project-desc-container">
+              <div class="project-desc">
+                <span>Retail console application</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT 6 END -->
+
+        <!-- PROJECT 7 START -->
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card-container">
+            <a href="site/Projects/galaxyShooter.html"
+              ><div class="project-item">
+                <div
+                  class="project-img zoom"
+                  style="background-image: url('img/spaceshooterpro.png')"
+                ></div>
+                <div class="project-title-container">
+                  <div class="project-title">
+                    <span>Galaxy Shooter</span>
+                  </div>
+                </div>
+              </div></a
+            >
+            <div class="project-tags-container">
+              <div class="project-tag" style="background-color: black">
+                <span>Unity</span>
+              </div>
+              <div class="project-tag" style="background-color: #8c00ff">
+                <span>C Sharp</span>
+              </div>
+            </div>
+            <div class="project-desc-container">
+              <div class="project-desc">
+                <span>2D space shooter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT 7 END -->
+
+        <!-- PROJECT 8 START -->
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card-container">
+            <a href="site/Projects/zombieRunner.html"
+              ><div class="project-item">
+                <div
+                  class="project-img zoom"
+                  style="background-image: url(img/zombieRunner-thumbnail.png)"
+                ></div>
+
+                <div class="project-title-container">
+                  <div class="project-title">
+                    <span>Zombie Runner (prototype)</span>
+                  </div>
+                </div>
+              </div></a
+            >
+            <div class="project-tags-container">
+              <div class="project-tag" style="background-color: black">
+                <span>Unity</span>
+              </div>
+              <div class="project-tag" style="background-color: #8c00ff">
+                <span>C Sharp</span>
+              </div>
+            </div>
+            <div class="project-desc-container">
+              <div class="project-desc">
+                <span>3D zombie fps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT 8 END -->
+
+        <!-- PROJECT 9 START -->
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card-container">
+            <a href="site/Projects/realmRush.html"
+              ><div class="project-item">
+                <div
+                  class="project-img zoom"
+                  style="background-image: url('img/RealmRushThumbnail.png')"
+                ></div>
+                <div class="project-title-container">
+                  <div class="project-title">
+                    <span>Realm Rush (prototype)</span>
+                  </div>
+                </div>
+              </div></a
+            >
+            <div class="project-tags-container">
+              <div class="project-tag" style="background-color: black">
+                <span>Unity</span>
+              </div>
+              <div class="project-tag" style="background-color: #8c00ff">
+                <span>C Sharp</span>
+              </div>
+            </div>
+            <div class="project-desc-container">
+              <div class="project-desc">
+                <span>3D tower defense</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT 9 END -->
+
+        <!-- END OF PROJECTS -->
+      </div>
+    </div>
+    <!-- **** END of Cards **** -->
+
+    <span class="anchor" id="contact"></span>
+    <div class="section"></div>
+
+    <!-- Contact -->
+    <div class="container-fluid padding contactContainer">
+      <div class="row text-center padding">
+        <div class="col-12">
+          <h2 class="heading-text">Contact Me</h2>
+        </div>
+
+        <div class="col-12 body-text">
+          <h2>
+            Feel free to send me a message here: vkdawah@gmail.com. In the
+            meantime, here are some links masquerading as social media icons.
+          </h2>
+        </div>
+
+        <div class="col-12 social padding">
+          <a href="https://twitter.com/blurlingite" target="_blank"
+            ><li class="fab fa-twitter"></li
+          ></a>
+          <a href="https://github.com/Blurlingite" target="_blank"
+            ><li class="fab fa-github"></li
+          ></a>
+          <a href="https://www.linkedin.com/in/vishnudawah" target="_blank"
+            ><li class="fab fa-linkedin"></li
+          ></a>
+          <a href="https://blurlingite.wordpress.com/" target="_blank"
+          ><li class="fab fa-wordpress"></li
+        ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid body-text">
+        <div class="row text-center">
+          <div class="col-12">
+            <h5 id="copyright"></h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      let dt = new Date();
+      let text = `Copyright © ${dt.getFullYear()} by Vishnu Dawah`;
+
+      var theElement = document.getElementById("copyright");
+
+      var content = document.createTextNode(text);
+      theElement.appendChild(content);
+    </script>
+
   </body>
 </html>
